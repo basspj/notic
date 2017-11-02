@@ -1,6 +1,8 @@
 # notic-mobile
 React Native and more
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 
 ## To-Do
 
@@ -21,12 +23,12 @@ React Native and more
 
 #### Framework
 
-- [ ] [React Native](https://github.com/facebook/react-native)
+- [x] [React Native](https://github.com/facebook/react-native)
 
 
 #### IDE
 
-- [ ] [VSCode](https://github.com/Microsoft/vscode)
+- [x] [VSCode](https://github.com/Microsoft/vscode)
 
 
 #### Language
@@ -69,16 +71,16 @@ React Native and more
 
 #### Code-Formatting
 
-- [ ] [Prettier](https://github.com/prettier/prettier)
-- [ ] [EditorConfig](http://editorconfig.org)
+- [x] [Prettier](https://github.com/prettier/prettier)
+- [x] [EditorConfig](http://editorconfig.org)
 
 
 #### Commit Tools
 
-- [ ] [Commitizen](https://github.com/commitizen/cz-cli)
-- [ ] [Commitlint](https://github.com/marionebl/commitlint)
-- [ ] [Lint-Staged](https://github.com/okonet/lint-staged)
-- [ ] [Husky](https://github.com/typicode/husky)
+- [x] [Commitizen](https://github.com/commitizen/cz-cli)
+- [x] [Commitlint](https://github.com/marionebl/commitlint)
+- [x] [Lint-Staged](https://github.com/okonet/lint-staged)
+- [x] [Husky](https://github.com/typicode/husky)
 
 
 #### CI
