@@ -15,7 +15,7 @@ React Native and more
 
 ### Follow Style or Guideline
 
-- [ ] [Airbnb's Javascript](https://github.com/airbnb/javascript)
+- [x] [Airbnb's Javascript](https://github.com/airbnb/javascript)
 - [ ] [SemVer](http://semver.org/)
 
 
@@ -33,7 +33,7 @@ React Native and more
 
 #### Language
 
-- [ ] [TypeScript](https://github.com/Microsoft/TypeScript)
+- [x] [TypeScript](https://github.com/Microsoft/TypeScript)
 
 
 #### Structure
@@ -54,8 +54,8 @@ React Native and more
 
 #### Test
 
-- [ ] [Jest](https://github.com/facebook/jest)
-- [ ] [Enzyme](https://github.com/airbnb/enzyme)
+- [x] [Jest](https://github.com/facebook/jest)
+- [x] [Enzyme](https://github.com/airbnb/enzyme)
 - [ ] [Detox](https://github.com/wix/detox)
 
 
@@ -66,7 +66,7 @@ React Native and more
 
 #### Linting
 
-- [ ] [Tslint](https://github.com/palantir/tslint)
+- [x] [Tslint](https://github.com/palantir/tslint)
 
 
 #### Code-Formatting
