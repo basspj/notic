@@ -1,0 +1,32 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:latest", "tslint-config-airbnb"],
+  "rules": {
+    //override latest
+    "no-submodule-imports": false,
+
+    //override recommended
+    "no-switch-case-fall-through": true,
+    "no-unnecessary-callback-wrapper": true,
+    "no-unnecessary-qualifier": true,
+    "no-unnecessary-type-assertion": true,
+    "no-unused-expression": false,
+    "no-string-literal": false,
+    "no-use-before-declare": true,
+    "no-consecutive-blank-lines": false,
+    "object-literal-sort-RuleKeys": false,
+    "no-console": [true, "debug", "info", "time", "timeEnd", "trace"],
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "no-implicit-dependencies": false,
+
+    //override airbnb
+    "import-name": false,
+    "variable-name": false,
+    "semicolon": [true, "always", "ignore-bound-class-methods"],
+
+    //prettier not supported
+    "ter-arrow-parens": [false]
+  },
+  "rulesDirectory": []
+}
