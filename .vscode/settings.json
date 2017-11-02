@@ -1,0 +1,12 @@
+{
+  "path-intellisense.mappings": {
+    "~": "${workspaceRoot}/src",
+    "~tests": "${workspaceRoot}/tests"
+  },
+  "editor.formatOnSave": true,
+  "prettier.typescriptEnable": ["typescript", "typescriptreact"],
+  "prettier.jsonEnable": ["json"],
+  "prettier.javascriptEnable": ["javascript", "javascriptreact"],
+  "tslint.jsEnable": false,
+  "autofold.default": 0
+}
