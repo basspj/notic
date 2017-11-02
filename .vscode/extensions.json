@@ -1,0 +1,36 @@
+{
+  // See http://go.microsoft.com/fwlink/?LinkId=827846
+  // for the documentation about the extensions.json format
+  "recommendations": [
+    "Anjali.clipboard-history",
+    "CoenraadS.bracket-pair-colorizer",
+    "DSKWRK.vscode-generate-getter-setter",
+    "DavidAnson.vscode-markdownlint",
+    "EditorConfig.EditorConfig",
+    "IBM.output-colorizer",
+    "KnisterPeter.vscode-commitizen",
+    "Orta.vscode-jest",
+    "PKief.material-icon-theme",
+    "Shan.code-settings-sync",
+    "anseki.vscode-color",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "eamodio.gitlens",
+    "eg2.tslint",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "hnw.vscode-auto-open-markdown-preview",
+    "infeng.vscode-react-typescript",
+    "msjsdiag.debugger-for-chrome",
+    "naumovs.color-highlight",
+    "pflannery.vscode-versionlens",
+    "rbbit.typescript-hero",
+    "ryu1kn.partial-diff",
+    "steoates.autoimport",
+    "streetsidesoftware.code-spell-checker",
+    "vsmobile.vscode-react-native",
+    "wayou.vscode-todo-highlight",
+    "xabikos.ReactSnippets"
+  ]
+}
