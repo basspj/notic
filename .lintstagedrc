@@ -4,7 +4,7 @@
     "prettier --config .prettierrc --parser typescript --write",
     "git add"
   ],
-  "**/*.js{,x}": ["prettier --config .prettierrc --write", "git add"],
+  "**/*.js{,x}": ["git add"],
   "{*.json,.*rc}": [
     "prettier --config .prettierrc --parser json --write",
     "git add"
