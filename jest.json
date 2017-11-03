@@ -1,0 +1,38 @@
+{
+  "preset": "react-native",
+  "globals": {
+    "ts-jest": {
+      "tsConfigFile": "tsconfig.json",
+      "useBabelrc": true
+    }
+  },
+  "transform": {
+    ".+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
+    ".+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+  },
+  "testRegex": "/tests/.*.test.(js|ts|tsx)?$",
+  "moduleDirectories": ["node_modules", "src"],
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
+  "moduleNameMapper": {
+    "~/(.*)": "<rootDir>/src/$1",
+    "~tests/(.*)": "<rootDir>/tests/$1",
+    "~e2e/(.*)": "<rootDir>/e2e/$1"
+  },
+  "setupFiles": [
+    "<rootDir>/scripts/jest/enzyme/shim.ts",
+    "<rootDir>/scripts/jest/enzyme/setup.ts"
+  ],
+  "setupTestFrameworkScriptFile":
+    "<rootDir>/node_modules/jest-enzyme/lib/index.js",
+  "collectCoverage": true,
+  "mapCoverage": true,
+  "coverageThreshold": {
+    "global": {
+      "branches": 90,
+      "functions": 95,
+      "lines": 95,
+      "statements": 95
+    }
+  },
+  "coveragePathIgnorePatterns": ["/node_modules/", "/tests/", "/scripts/"]
+}

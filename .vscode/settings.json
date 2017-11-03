@@ -1,7 +1,8 @@
 {
   "path-intellisense.mappings": {
     "~": "${workspaceRoot}/src",
-    "~tests": "${workspaceRoot}/tests"
+    "~tests": "${workspaceRoot}/tests",
+    "~e2e": "${workspaceRoot}/e2e"
   },
   "editor.formatOnSave": true,
   "prettier.typescriptEnable": ["typescript", "typescriptreact"],

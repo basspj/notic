@@ -61,7 +61,7 @@ React Native and more
 
 #### Dev Tools
 
-- [ ] [Storybook](https://github.com/storybooks/storybook)
+- [x] [Storybook](https://github.com/storybooks/storybook)
 
 
 #### Linting

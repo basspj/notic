@@ -7,6 +7,8 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 
+import { Ids } from '~e2e/ids';
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
@@ -17,7 +19,7 @@ const instructions = Platform.select({
 export class App extends Component<{}> {
   public render() {
     return (
-      <View style={styles.container}>
+      <View testID={Ids.ROOT} style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>

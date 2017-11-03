@@ -24,10 +24,12 @@
     "prettier-json":
       "prettier --config .prettierrc --parser json --write '{*.json,.*rc}'",
     "pretest": "npm run clean-coverage",
-    "test": "jest",
+    "test": "jest --config jest.json",
     "test-clean": "npm run test -- --no-cache",
     "test-watch": "npm run test -- --watch",
     "snapshot": "npm run test -- --updateSnapshot",
+    "e2e-build": "detox build -c ios.sim.debug",
+    "e2e-test": "detox test -c ios.sim.debug",
     "storybook": "storybook start -p 7007",
     "precommit": "lint-staged",
     "commitmsg": "commitlint -e",
@@ -52,8 +54,6 @@
     "ios": "react-native run-ios",
     "ios-log": "react-native log-ios",
     "ios-clean": "rimraf ios/build",
-    "detox-build": "detox build -c ios.ip6",
-    "detox-test": "detox test -c ios.ip6",
     "bundle-clean-android":
       "rimraf index.android.bundle.js index.android.bundle.js.meta",
     "bundle-clean-ios": "rimraf main.jsbundle.js main.jsbundle.js.meta",
@@ -93,6 +93,7 @@
     "@storybook/addon-actions": "3.2.14",
     "@storybook/addon-links": "3.2.14",
     "babel-preset-react-native": "4.0.0",
+    "babel-plugin-module-resolver": "2.7.1",
     "babel-jest": "21.2.0",
     "react": "16.0.0-beta.5",
     "react-dom": "16.0.0-beta.5",
@@ -100,7 +101,7 @@
     "react-native-typescript-transformer": "1.1.4",
     "lerna": "2.5.1",
     "typescript": "2.6.1",
-    "tsutils": "2.12.1",
+    "tsutils": "2.12.2",
     "tslib": "1.8.0",
     "ts-node": "3.3.0",
     "ts-jest": "21.1.4",
@@ -113,7 +114,8 @@
     "jest": "21.2.1",
     "jest-react-native": "18.0.0",
     "jest-enzyme": "4.0.1",
-    "sinon": "4.0.2",
+    "sinon": "4.1.1",
+    "detox": "5.9.3",
     "prepack": "0.2.10",
     "javascript-obfuscator": "0.12.0",
     "commitizen": "2.9.6",
@@ -135,15 +137,15 @@
       ".+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
       ".+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
-    "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "testRegex": "/tests/.*.spec.(js|ts|tsx)?$",
     "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
     "moduleDirectories": ["node_modules", "src"],
     "moduleNameMapper": {
       "~/(.*)": "<rootDir>/src/$1",
-      "~tests/(.*)": "<rootDir>/tests/$1"
+      "~tests/(.*)": "<rootDir>/tests/$1",
+      "~e2e/(.*)": "<rootDir>/e2e/$1"
     },
-    "setupFiles": ["./scripts/jest/shim.ts", "./scripts/jest/setup.ts"],
-    "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
+    "setupTestFrameworkScriptFile": "<rootDir>/e2e/init.ts",
     "collectCoverage": true,
     "mapCoverage": true,
     "coverageThreshold": {
@@ -155,6 +157,41 @@
       }
     },
     "coveragePathIgnorePatterns": ["/node_modules/", "/tests/", "/scripts/"]
+  },
+  "detox": {
+    "runner": "jest",
+    "configurations": {
+      "android.emu.debug": {
+        "binaryPath": "android/app/build/outputs/apk/app-debug.apk",
+        "build":
+          "pushd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && popd",
+        "type": "android.emulator",
+        "name": "Nexus_5X_API_26"
+      },
+      "android.emu.release": {
+        "binaryPath": "android/app/build/outputs/apk/app-release.apk",
+        "build":
+          "pushd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release && popd",
+        "type": "android.emulator",
+        "name": "Nexus_5X_API_26"
+      },
+      "ios.sim.debug": {
+        "binaryPath":
+          "ios/build/Build/Products/Debug-iphonesimulator/notic.app",
+        "build":
+          "xcodebuild -project ios/notic.xcodeproj -scheme notic -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "name": "iPhone 6"
+      },
+      "ios.sim.release": {
+        "binaryPath":
+          "ios/build/Build/Products/Release-iphonesimulator/notic.app",
+        "build":
+          "export RCT_NO_LAUNCH_PACKAGER=true && xcodebuild -project ios/notic.xcodeproj -scheme notic -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "name": "iPhone 6"
+      }
+    }
   },
   "config": {
     "commitizen": {

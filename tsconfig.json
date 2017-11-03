@@ -8,7 +8,9 @@
     "outDir": "dist",
     "typeRoots": ["node_modules/@types", "@types"],
     "paths": {
-      "~/*": ["./src/*"]
+      "~/*": ["./src/*"],
+      "~tests/*": ["./tests/*"],
+      "~e2e/*": ["./e2e/*"]
     },
     "declaration": true,
     "declarationDir": "dist/types",
@@ -32,5 +34,6 @@
     "newLine": "LF"
   },
   "compileOnSave": false,
+  "include": ["src"],
   "exclude": ["node_modules"]
 }

@@ -1,4 +1,17 @@
 {
   "presets": ["react-native"],
-  "sourceMaps": "inline"
+  "sourceMaps": "inline",
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "~": "./src",
+          "~tests": "./tests",
+          "~e2e": "./e2e"
+        }
+      }
+    ]
+  ]
 }
