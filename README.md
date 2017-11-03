@@ -1,8 +1,8 @@
 # notic-mobile
 React Native and more
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
+[![Travis CI](https://travis-ci.org/basspj/notic-mobile.svg?branch=master)
+![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ## To-Do
 
@@ -85,7 +85,7 @@ React Native and more
 
 #### CI
 
-- [ ] [TravisCI](https://travis-ci.com)
+- [x] [TravisCI](https://travis-ci.com)
 - [ ] [Codecov](https://codecov.io/)
 
 
