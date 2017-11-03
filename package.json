@@ -23,7 +23,6 @@
       "prettier --config .prettierrc --parser typescript --write '{packages/**,scripts}/**/*.ts{,x}'",
     "prettier-json":
       "prettier --config .prettierrc --parser json --write '{*.json,.*rc}'",
-    "pretest": "npm run clean-coverage",
     "test": "jest --config jest.json",
     "test-clean": "npm run test -- --no-cache",
     "test-watch": "npm run test -- --watch",
@@ -146,16 +145,6 @@
       "~e2e/(.*)": "<rootDir>/e2e/$1"
     },
     "setupTestFrameworkScriptFile": "<rootDir>/e2e/init.ts",
-    "collectCoverage": true,
-    "mapCoverage": true,
-    "coverageThreshold": {
-      "global": {
-        "branches": 90,
-        "functions": 95,
-        "lines": 95,
-        "statements": 95
-      }
-    },
     "coveragePathIgnorePatterns": ["/node_modules/", "/tests/", "/scripts/"]
   },
   "detox": {
