@@ -24,6 +24,7 @@
     "prettier-json":
       "prettier --config .prettierrc --parser json --write '{*.json,.*rc}'",
     "test": "jest --config jest.json",
+    "posttest": "codecov -f coverage/*.json",
     "test-clean": "npm run test -- --no-cache",
     "test-watch": "npm run test -- --watch",
     "snapshot": "npm run test -- --updateSnapshot",
@@ -113,6 +114,7 @@
     "jest": "21.2.1",
     "jest-react-native": "18.0.0",
     "jest-enzyme": "4.0.1",
+    "codecov": "3.0.0",
     "sinon": "4.1.1",
     "detox": "5.9.3",
     "prepack": "0.2.10",
