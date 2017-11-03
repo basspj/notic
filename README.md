@@ -87,7 +87,7 @@ React Native and more
 #### CI
 
 - [x] [TravisCI](https://travis-ci.com)
-- [ ] [Codecov](https://codecov.io/)
+- [x] [Codecov](https://codecov.io/)
 
 
 #### Doc Tools
