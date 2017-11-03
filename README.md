@@ -1,8 +1,9 @@
 # notic-mobile
 React Native and more
 
-[![Travis CI](https://travis-ci.org/basspj/notic-mobile.svg?branch=master)
-![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+![Travis CI](https://travis-ci.org/basspj/notic-mobile.svg?branch=master)
+[![codecov](https://codecov.io/gh/basspj/notic-mobile/branch/master/graph/badge.svg)](https://codecov.io/gh/basspj/notic-mobile)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ## To-Do
 
