@@ -19,6 +19,7 @@
     "ordered-imports": false,
     "object-literal-sort-keys": false,
     "no-implicit-dependencies": false,
+    "no-empty": false,
 
     //override airbnb
     "import-name": false,
