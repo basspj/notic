@@ -147,6 +147,8 @@
       "~e2e/(.*)": "<rootDir>/e2e/$1"
     },
     "setupTestFrameworkScriptFile": "<rootDir>/e2e/init.ts",
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
     "coveragePathIgnorePatterns": ["/node_modules/", "/tests/", "/scripts/"]
   },
   "detox": {
