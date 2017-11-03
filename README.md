@@ -56,7 +56,7 @@ React Native and more
 
 - [x] [Jest](https://github.com/facebook/jest)
 - [x] [Enzyme](https://github.com/airbnb/enzyme)
-- [ ] [Detox](https://github.com/wix/detox)
+- [x] [Detox](https://github.com/wix/detox)
 
 
 #### Dev Tools
