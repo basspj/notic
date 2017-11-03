@@ -6,13 +6,13 @@
     "bootstrap": "lerna bootstrap",
     "bootstrap-hoist": "npm run bootstrap -- --hoist",
     "publish": "npm run clean-build && npm run build && lerna publish --silent",
-    "clean": "shx rm -rf $TMPDIR/react-* && npm cache clean -f",
+    "clean": "rimraf $TMPDIR/react-* && npm cache clean -f",
     "clean-watch": "npm run clean && watchman watch-del-all",
-    "clean-coverage": "shx rm -rf 'coverage'",
-    "clean-node_modules": "shx rm -rf 'node_modules' 'packages/*/node_modules'",
+    "clean-coverage": "rimraf 'coverage'",
+    "clean-node_modules": "rimraf 'node_modules' 'packages/*/node_modules'",
     "clean-package-lock":
-      "shx rm -rf 'package-lock.json' 'packages/*/package-lock.json'",
-    "clean-dist": "shx rm -rf 'dist' 'packages/*/dist'",
+      "rimraf 'package-lock.json' 'packages/*/package-lock.json'",
+    "clean-dist": "rimraf 'dist' 'packages/*/dist'",
     "clean-all":
       "npm run clean-dist && npm run clean-package-lock && npm run clean-node_modules",
     "dedupe": "npm dedupe",
@@ -28,13 +28,14 @@
     "test-clean": "npm run test -- --no-cache",
     "test-watch": "npm run test -- --watch",
     "snapshot": "npm run test -- --updateSnapshot",
+    "storybook": "storybook start -p 7007",
     "precommit": "lint-staged",
     "commitmsg": "commitlint -e",
     "git-add": "git add .",
     "cz": "git-cz",
     "start": "react-native start",
     "link": "react-native link",
-    "prebuild": "shx rm -rf build",
+    "prebuild": "rimraf build",
     "build": "tsc",
     "postbuild": "npm run clean-build",
     "postversion":
@@ -47,28 +48,28 @@
     "android-shake":
       "$ANDROID_HOME/platform-tools/adb devices | grep '\\t' | awk '{print $1}' | sed 's/\\s//g' | xargs -I {} $ANDROID_HOME/platform-tools/adb -s {} shell input keyevent 82",
     "android-log": "react-native log-android",
-    "android-clean": "shx rm -rf android/app/build && shx rm -rf android/build",
+    "android-clean": "rimraf android/app/build && rimraf android/build",
     "ios": "react-native run-ios",
     "ios-log": "react-native log-ios",
-    "ios-clean": "shx rm -rf ios/build",
+    "ios-clean": "rimraf ios/build",
     "detox-build": "detox build -c ios.ip6",
     "detox-test": "detox test -c ios.ip6",
     "bundle-clean-android":
-      "shx rm index.android.bundle.js index.android.bundle.js.meta",
-    "bundle-clean-ios": "shx rm main.jsbundle.js main.jsbundle.js.meta",
+      "rimraf index.android.bundle.js index.android.bundle.js.meta",
+    "bundle-clean-ios": "rimraf main.jsbundle.js main.jsbundle.js.meta",
     "obfuscate-android":
       "javascript-obfuscator index.android.bundle.js --output bundle/android/app/src/main/assets/index.android.bundle --compact true --selfDefending true",
     "obfuscate-ios":
       "javascript-obfuscator main.jsbundle.js --output bundle/ios/main.jsbundle --compact true --selfDefending true",
     "postobfuscate-android": "npm run bundle-clean-android",
     "postobfuscate-ios": "npm run bundle-clean-ios",
-    "prebundle-android": "shx rm -rf bundle/android",
-    "prebundle-ios": "shx rm -rf bundle/ios",
+    "prebundle-android": "rimraf bundle/android",
+    "prebundle-ios": "rimraf bundle/ios",
     "bundle-android":
       "react-native bundle --platform android --dev false --entry-file index.js --bundle-output index.android.bundle.js --assets-dest bundle/android/app/src/main/res/",
     "bundle-ios":
       "react-native bundle --platform ios --dev false --entry-file index.js --bundle-output main.jsbundle.js --assets-dest bundle/ios",
-    "prebundle": "shx rm -rf bundle",
+    "prebundle": "rimraf bundle",
     "bundle": "npm run bundle-android && npm run bundle-ios",
     "postbundle-android": "npm run obfuscate-android",
     "postbundle-ios": "npm run obfuscate-ios"
@@ -85,6 +86,10 @@
     "@commitlint/cli": "4.2.2",
     "@commitlint/config-angular": "4.2.1",
     "@commitlint/config-lerna-scopes": "4.2.1",
+    "@storybook/react-native": "3.2.14",
+    "@storybook/addon-actions": "3.2.14",
+    "@storybook/addon-links": "3.2.14",
+    "prop-types": "15.6.0",
     "babel-preset-react-native": "4.0.0",
     "babel-jest": "21.2.0",
     "react": "16.0.0-beta.5",
@@ -114,7 +119,7 @@
     "husky": "0.14.3",
     "lint-staged": "4.3.0",
     "prettier": "1.7.4",
-    "shx": "0.2.2"
+    "rimraf": "2.6.2"
   },
   "jest": {
     "preset": "react-native",
@@ -125,8 +130,8 @@
       }
     },
     "transform": {
-      "^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+      ".+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
+      ".+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
     "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
