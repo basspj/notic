@@ -1,0 +1,61 @@
+{
+  // "parser": "babel-eslint",
+  "parser": "typescript-eslint-parser",
+  "extends": ["airbnb", "wix/react-native"],
+  "plugins": ["react", "typescript"],
+  "env": {
+    "es6": true,
+    "jest": true,
+    "jasmine": true,
+    "browser": true,
+    "commonjs": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "modules": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    // override till this bug is resolved https://github.com/yannickcr/eslint-plugin-react/issues/1499
+    "react/no-unsecaped-entites": 0,
+    "react/self-closing-comp": 0,
+    "react/void-dom-elements-no-children": 0,
+    "react/jsx-indent": 0,
+    "react/jsx-indent-props": 0,
+    "react/jsx-max-props-per-line": 0,
+
+    // known issues in TypeScript Parser https://github.com/eslint/typescript-eslint-parser
+    "no-undef": 0,
+    "no-unused-vars": 0,
+    "no-useless-constructor": 0,
+    "space-infix-ops": 0,
+
+    // override
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "import/prefer-default-export": 0,
+    "import/resolver": 0,
+    "object-curly-newline": 0,
+    "object-curly-spacing": 0,
+    "react/default-props-match-prop-types": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-space-before-closing": 0,
+    "react/no-unescaped-entities": 0,
+
+    // for convenient
+    "jsx-a11y/accessible-emoji": 0,
+
+    // prettier
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-single"],
+    "no-mixed-operators": 0 // not working
+  },
+  "globals": {
+    "__DEV__": false
+  }
+}
