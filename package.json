@@ -19,6 +19,7 @@
     "tslint": "tslint -c tslint.json '**/*.ts{,x}'",
     "tslint-type": "npm run lint -- --type-check",
     "eslint": "eslint -c .eslintrc '**/*.ts{,x}'",
+    "lint": "npm run tslint && npm run eslint",
     "prettier": "npm run prettier-typescript && npm run prettier-json",
     "prettier-typescript":
       "prettier --config .prettierrc --parser typescript --write '{packages/**,scripts}/**/*.ts{,x}'",
