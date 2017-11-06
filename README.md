@@ -79,6 +79,7 @@ React Native and more
 
 #### Linting
 
+- [x] [Eslint](https://github.com/eslint/eslint)
 - [x] [Tslint](https://github.com/palantir/tslint)
 
 
