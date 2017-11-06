@@ -10,8 +10,12 @@ React Native and more
 ### Design
 
 - [ ] Feature-First
+- [ ] Responsive
 - [ ] Mono-Repo
 - [ ] Offline-Using
+- [ ] Fingerprint Login
+- [ ] Dark Mode
+- [ ] Battery Saver Mode
 
 
 ### Follow Style or Guideline
