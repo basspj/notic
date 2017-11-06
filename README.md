@@ -13,6 +13,9 @@ React Native and more
 - [ ] Responsive
 - [ ] Mono-Repo
 - [ ] Offline-Using
+- [ ] Login with Github
+- [ ] Syncing with Github Gist
+- [ ] Guest Login
 - [ ] Fingerprint Login
 - [ ] Dark Mode
 - [ ] Battery Saver Mode
