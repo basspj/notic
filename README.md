@@ -1,16 +1,21 @@
 # notic-mobile
 React Native and more
 
-[![Travis CI](https://travis-ci.org/basspj/notic-mobile.svg?branch=master)
-![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+![Travis CI](https://travis-ci.org/basspj/notic-mobile.svg?branch=master)
+[![codecov](https://codecov.io/gh/basspj/notic-mobile/branch/master/graph/badge.svg)](https://codecov.io/gh/basspj/notic-mobile)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ## To-Do
 
 ### Design
 
 - [ ] Feature-First
+- [ ] Responsive
 - [ ] Mono-Repo
 - [ ] Offline-Using
+- [ ] Fingerprint Login
+- [ ] Dark Mode
+- [ ] Battery Saver Mode
 
 
 ### Follow Style or Guideline
@@ -39,6 +44,11 @@ React Native and more
 #### Structure
 
 - [ ] [Lerna](https://github.com/lerna/lerna)
+
+
+#### Style
+
+- [ ] [Styled-Components](https://github.com/styled-components/styled-components)
 
 
 #### App State
@@ -86,7 +96,7 @@ React Native and more
 #### CI
 
 - [x] [TravisCI](https://travis-ci.com)
-- [ ] [Codecov](https://codecov.io/)
+- [x] [Codecov](https://codecov.io/)
 
 
 #### Doc Tools
