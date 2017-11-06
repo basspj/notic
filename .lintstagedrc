@@ -1,10 +1,16 @@
 {
-  "{packages/**,scripts}/*.ts{,x}": [
-    "tslint -c tslint.json --fix",
+  "*.d.ts": [
+    "eslint -c .eslintrc",
     "prettier --config .prettierrc --parser typescript --write",
     "git add"
   ],
-  "**/*.js{,x}": ["git add"],
+  "*.ts{,x}": [
+    "tslint -c tslint.json --fix",
+    "eslint -c .eslintrc",
+    "prettier --config .prettierrc --parser typescript --write",
+    "git add"
+  ],
+  "*.js{,x}": ["git add"],
   "{*.json,.*rc}": [
     "prettier --config .prettierrc --parser json --write",
     "git add"
