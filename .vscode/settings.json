@@ -4,10 +4,18 @@
     "~tests": "${workspaceRoot}/tests",
     "~e2e": "${workspaceRoot}/e2e"
   },
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "tslint.enable": true,
+  "tslint.jsEnable": false,
+  "eslint.enable": true,
+  "eslint.packageManager": "npm",
+  "eslint.run": "onType",
+  "eslint.validate": ["typescript", "typescriptreact"],
+  "eslint.options": { "extensions": [".js", ".jsx", ".ts", ".tsx"] },
   "editor.formatOnSave": true,
   "prettier.typescriptEnable": ["typescript", "typescriptreact"],
   "prettier.jsonEnable": ["json"],
   "prettier.javascriptEnable": ["javascript", "javascriptreact"],
-  "tslint.jsEnable": false,
+  "prettier.eslintIntegration": true,
   "autofold.default": 0
 }
