@@ -29,7 +29,9 @@ export default class Welcome extends React.Component<IWelcomeProps> {
 
   public showApp = (event: any) => {
     event.preventDefault();
-    this.props.showApp && this.props.showApp();
+    if (this.props.showApp) {
+      this.props.showApp();
+    }
   };
 
   public render() {
