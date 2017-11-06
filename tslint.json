@@ -10,7 +10,7 @@
     "no-unnecessary-callback-wrapper": true,
     "no-unnecessary-qualifier": true,
     "no-unnecessary-type-assertion": true,
-    "no-unused-expression": false,
+    "no-unused-expression": true,
     "no-string-literal": false,
     "no-use-before-declare": true,
     "no-consecutive-blank-lines": false,
@@ -29,5 +29,8 @@
     //prettier not supported
     "ter-arrow-parens": [false]
   },
-  "rulesDirectory": []
+  "rulesDirectory": [],
+  "linterOptions": {
+    "exclude": ["**/node_modules/**"]
+  }
 }
