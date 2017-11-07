@@ -17,6 +17,7 @@ React Native and more
 - [ ] Syncing with Github Gist
 - [ ] Guest Login
 - [ ] Fingerprint Login
+- [ ] Customizable Themes
 - [ ] Dark Mode
 - [ ] Battery Saver Mode
 
