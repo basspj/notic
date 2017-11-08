@@ -12,6 +12,7 @@
   "eslint.run": "onType",
   "eslint.validate": ["typescript", "typescriptreact"],
   "eslint.options": { "extensions": [".js", ".jsx", ".ts", ".tsx"] },
+  "stylelint.enable": true,
   "editor.formatOnSave": true,
   "prettier.typescriptEnable": ["typescript", "typescriptreact"],
   "prettier.jsonEnable": ["json"],
