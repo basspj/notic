@@ -82,6 +82,7 @@ React Native and more
 
 - [x] [Eslint](https://github.com/eslint/eslint)
 - [x] [Tslint](https://github.com/palantir/tslint)
+- [ ] [Stylelint](https://github.com/stylelint/stylelint)
 
 
 #### Code-Formatting
