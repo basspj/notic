@@ -17,6 +17,7 @@ React Native and more
 - [ ] Syncing with Github Gist
 - [ ] Guest Login
 - [ ] Fingerprint Login
+- [ ] Customizable Themes
 - [ ] Dark Mode
 - [ ] Battery Saver Mode
 
@@ -81,6 +82,7 @@ React Native and more
 
 - [x] [Eslint](https://github.com/eslint/eslint)
 - [x] [Tslint](https://github.com/palantir/tslint)
+- [ ] [Stylelint](https://github.com/stylelint/stylelint)
 
 
 #### Code-Formatting
