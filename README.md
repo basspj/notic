@@ -48,12 +48,12 @@ React Native and more
 
 #### Structure
 
-- [ ] [Lerna](https://github.com/lerna/lerna)
+- [x] [Lerna](https://github.com/lerna/lerna)
 
 
 #### Style
 
-- [ ] [Styled-Components](https://github.com/styled-components/styled-components)
+- [x] [Styled-Components](https://github.com/styled-components/styled-components)
 
 
 #### App State
@@ -83,7 +83,7 @@ React Native and more
 
 - [x] [Eslint](https://github.com/eslint/eslint)
 - [x] [Tslint](https://github.com/palantir/tslint)
-- [ ] [Stylelint](https://github.com/stylelint/stylelint)
+- [x] [Stylelint](https://github.com/stylelint/stylelint)
 
 
 #### Code-Formatting
@@ -108,5 +108,5 @@ React Native and more
 
 #### Doc Tools
 
-- [ ] [TypeDoc](https://github.com/TypeStrong/typedoc)
+- [x] [TypeDoc](https://github.com/TypeStrong/typedoc)
 
