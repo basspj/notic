@@ -1,0 +1,67 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "packages/app"
+    },
+    {
+      "path": "packages/shared-themes"
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "tslint.enable": true,
+    "tslint.jsEnable": false,
+    "eslint.enable": true,
+    "eslint.packageManager": "npm",
+    "eslint.run": "onType",
+    "eslint.validate": ["typescript", "typescriptreact"],
+    "eslint.options": { "extensions": [".js", ".jsx", ".ts", ".tsx"] },
+    "stylelint.enable": true,
+    "editor.formatOnSave": true,
+    "prettier.typescriptEnable": ["typescript", "typescriptreact"],
+    "prettier.jsonEnable": ["json"],
+    "prettier.javascriptEnable": ["javascript", "javascriptreact"],
+    "prettier.eslintIntegration": true,
+    "autofold.default": 0
+  },
+  "extensions": {
+    "recommendations": [
+      "Anjali.clipboard-history",
+      "CoenraadS.bracket-pair-colorizer",
+      "DSKWRK.vscode-generate-getter-setter",
+      "DavidAnson.vscode-markdownlint",
+      "EditorConfig.EditorConfig",
+      "IBM.output-colorizer",
+      "KnisterPeter.vscode-commitizen",
+      "Orta.vscode-jest",
+      "PKief.material-icon-theme",
+      "Shan.code-settings-sync",
+      "alefragnani.Bookmarks",
+      "alefragnani.project-manager",
+      "anseki.vscode-color",
+      "christian-kohler.npm-intellisense",
+      "christian-kohler.path-intellisense",
+      "eamodio.gitlens",
+      "eg2.tslint",
+      "esbenp.prettier-vscode",
+      "formulahendry.auto-close-tag",
+      "formulahendry.auto-rename-tag",
+      "hnw.vscode-auto-open-markdown-preview",
+      "infeng.vscode-react-typescript",
+      "msjsdiag.debugger-for-chrome",
+      "naumovs.color-highlight",
+      "pflannery.vscode-versionlens",
+      "rbbit.typescript-hero",
+      "ryu1kn.partial-diff",
+      "shinnn.stylelint",
+      "steoates.autoimport",
+      "streetsidesoftware.code-spell-checker",
+      "vsmobile.vscode-react-native",
+      "wayou.vscode-todo-highlight",
+      "xabikos.ReactSnippets"
+    ]
+  }
+}
