@@ -11,8 +11,10 @@ React Native and more
 ### Design
 
 - [ ] Feature-First
-- [ ] Responsive
 - [ ] Mono-Repo
+- [ ] Responsive
+- [ ] Fluid Sizing
+- [ ] Parallax
 - [ ] Offline-Using
 - [ ] Login with Github
 - [ ] Syncing with Github Gist
