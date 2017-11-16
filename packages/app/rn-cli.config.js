@@ -7,7 +7,6 @@ const blacklist = require('metro-bundler/src/blacklist');
 // const peerDependencies = Object.keys(sharedThemesPackage.peerDependencies);
 
 const config = {
-
   // getProjectRoots() {
   //   return [__dirname, path.resolve(__dirname, '../shared-themes')];
   // },

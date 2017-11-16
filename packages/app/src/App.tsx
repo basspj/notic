@@ -4,7 +4,7 @@
  * @flow
  */
 
-import React from 'react';
+import * as React from 'react';
 import { Platform, View, Text } from 'react-native';
 import styled, { ThemeProvider } from 'styled-components/native';
 import { moderateHorizontalScale } from 'shared-themes';
