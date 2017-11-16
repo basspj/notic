@@ -46,6 +46,9 @@
     "react/jsx-filename-extension": 0,
     "react/jsx-space-before-closing": 0,
     "react/no-unescaped-entities": 0,
+    "no-confusing-arrow": 0,
+    "operator-linebreak": 0,
+    "function-paren-newline": 0,
 
     // for convenient
     "jsx-a11y/accessible-emoji": 0,
