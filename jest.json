@@ -7,32 +7,26 @@
     }
   },
   "transform": {
-    ".+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
+    "^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
     ".+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
   },
-  "testRegex": "/tests/.*.test.(js|ts|tsx)?$",
-  "moduleDirectories": ["node_modules", "src"],
+  "modulePathIgnorePatterns": [
+    "packages/.*/dist",
+    "packages/.*/node_modules/react-native"
+  ],
+  "moduleDirectories": ["node_modules"],
   "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
-  "moduleNameMapper": {
-    "~/(.*)": "<rootDir>/src/$1",
-    "~tests/(.*)": "<rootDir>/tests/$1",
-    "~e2e/(.*)": "<rootDir>/e2e/$1"
-  },
   "setupFiles": [
-    "<rootDir>/scripts/jest/enzyme/shim.ts",
-    "<rootDir>/scripts/jest/enzyme/setup.ts"
+    "<rootDir>/scripts/jest/shim.ts",
+    "<rootDir>/scripts/jest/setup.ts"
   ],
   "setupTestFrameworkScriptFile":
     "<rootDir>/node_modules/jest-enzyme/lib/index.js",
+  "testRegex": "/tests/.*.test.(ts|tsx)?$",
+  "testPathIgnorePatterns": ["/node_modules/", "/packages/.*/dist"],
   "collectCoverage": true,
-  "mapCoverage": true,
-  "coverageThreshold": {
-    "global": {
-      "branches": 90,
-      "functions": 95,
-      "lines": 95,
-      "statements": 95
-    }
-  },
-  "coveragePathIgnorePatterns": ["/node_modules/", "/tests/", "/scripts/"]
+  "coverageReporters": ["json"],
+  "coveragePathIgnorePatterns": ["/node_modules/", "/tests/", "/scripts/"],
+  "collectCoverageFrom": ["packages/**/src/*.ts{,x}"],
+  "mapCoverage": true
 }
