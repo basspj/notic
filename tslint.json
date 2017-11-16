@@ -10,6 +10,7 @@
     "no-unnecessary-callback-wrapper": true,
     "no-unnecessary-qualifier": true,
     "no-unnecessary-type-assertion": true,
+    "no-object-literal-type-assertion": false,
     "no-unused-expression": true,
     "no-string-literal": false,
     "no-use-before-declare": true,
@@ -19,7 +20,9 @@
     "ordered-imports": false,
     "object-literal-sort-keys": false,
     "no-implicit-dependencies": false,
+    "no-empty-interface": false,
     "no-empty": false,
+    "quotemark": false,
 
     //override airbnb
     "import-name": false,
@@ -31,6 +34,6 @@
   },
   "rulesDirectory": [],
   "linterOptions": {
-    "exclude": ["**/node_modules/**", "./@types/**"]
+    "exclude": ["**/node_modules/**", "**/dist/**", "./@types/**"]
   }
 }
