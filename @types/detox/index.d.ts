@@ -5,3 +5,7 @@ declare namespace jest {
     toBeVisible: any;
   }
 }
+
+declare var device: any;
+declare var element: any;
+declare var by: any;
