@@ -10,6 +10,8 @@
       true,
       {
         "ignoreProperties": [
+          "margin-vertical",
+          "margin-horizontal",
           "padding-vertical",
           "padding-horizontal",
           "shadow-color",
@@ -18,6 +20,7 @@
           "shadow-opacity"
         ]
       }
-    ]
+    ],
+    "function-name-case": null
   }
 }
