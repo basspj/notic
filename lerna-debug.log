@@ -1,0 +1,331 @@
+0 silly input []
+1 silly flags { _: [ 'bootstrap' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   args: [] }
+2 verbose rootPath /Users/penguin/Workspace/basspj/notic-mobile
+3 info version 2.5.1
+4 silly existsSync /Users/penguin/Workspace/basspj/notic-mobile/VERSION
+5 silly initialize attempt
+6 silly npmConfig { registry: undefined,
+6 silly npmConfig   npmClient: undefined,
+6 silly npmConfig   npmClientArgs: undefined,
+6 silly npmConfig   mutex: undefined }
+7 silly initialize success
+8 silly execute attempt
+9 info Bootstrapping 2 packages
+10 info lifecycle preinstall
+11 silly runScript preinstall shared-themes
+12 silly shared-themes
+13 silly runScript preinstall app
+14 silly app
+15 silly hasMatchingDependency app shared-themes
+16 silly hasDependencyInstalled app babel-preset-react-native
+17 silly dependencyIsSatisfied [ 'babel-preset-react-native',
+17 silly dependencyIsSatisfied   '4.0.0',
+17 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+18 verbose dependencyIsSatisfied babel-preset-react-native true
+19 silly hasDependencyInstalled shared-themes babel-preset-react-native
+20 silly dependencyIsSatisfied [ 'babel-preset-react-native',
+20 silly dependencyIsSatisfied   '4.0.0',
+20 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes/node_modules' ]
+21 verbose dependencyIsSatisfied babel-preset-react-native true
+22 silly hasDependencyInstalled app babel-plugin-module-resolver
+23 silly dependencyIsSatisfied [ 'babel-plugin-module-resolver',
+23 silly dependencyIsSatisfied   '3.0.0',
+23 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+24 verbose dependencyIsSatisfied babel-plugin-module-resolver true
+25 silly hasDependencyInstalled shared-themes babel-plugin-module-resolver
+26 silly dependencyIsSatisfied [ 'babel-plugin-module-resolver',
+26 silly dependencyIsSatisfied   '3.0.0',
+26 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes/node_modules' ]
+27 verbose dependencyIsSatisfied babel-plugin-module-resolver true
+28 silly hasDependencyInstalled app react
+29 silly dependencyIsSatisfied [ 'react',
+29 silly dependencyIsSatisfied   '16.1.1',
+29 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+30 verbose dependencyIsSatisfied react true
+31 silly hasDependencyInstalled app react-native
+32 silly dependencyIsSatisfied [ 'react-native',
+32 silly dependencyIsSatisfied   '0.50.3',
+32 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+33 verbose dependencyIsSatisfied react-native true
+34 silly hasDependencyInstalled app typescript
+35 silly dependencyIsSatisfied [ 'typescript',
+35 silly dependencyIsSatisfied   '2.6.1',
+35 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+36 verbose dependencyIsSatisfied typescript true
+37 silly hasDependencyInstalled shared-themes typescript
+38 silly dependencyIsSatisfied [ 'typescript',
+38 silly dependencyIsSatisfied   '2.6.1',
+38 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes/node_modules' ]
+39 verbose dependencyIsSatisfied typescript true
+40 silly hasDependencyInstalled app ts-jest
+41 silly dependencyIsSatisfied [ 'ts-jest',
+41 silly dependencyIsSatisfied   '21.2.2',
+41 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+42 verbose dependencyIsSatisfied ts-jest true
+43 silly hasDependencyInstalled app jest
+44 silly dependencyIsSatisfied [ 'jest',
+44 silly dependencyIsSatisfied   '21.2.1',
+44 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+45 verbose dependencyIsSatisfied jest true
+46 silly hasDependencyInstalled app rimraf
+47 silly dependencyIsSatisfied [ 'rimraf',
+47 silly dependencyIsSatisfied   '2.6.2',
+47 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+48 verbose dependencyIsSatisfied rimraf true
+49 silly hasDependencyInstalled shared-themes rimraf
+50 silly dependencyIsSatisfied [ 'rimraf',
+50 silly dependencyIsSatisfied   '2.6.2',
+50 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes/node_modules' ]
+51 verbose dependencyIsSatisfied rimraf true
+52 silly hasDependencyInstalled app babel-plugin-transform-inline-environment-variables
+53 silly dependencyIsSatisfied [ 'babel-plugin-transform-inline-environment-variables',
+53 silly dependencyIsSatisfied   '0.2.0',
+53 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+54 verbose dependencyIsSatisfied babel-plugin-transform-inline-environment-variables false
+55 silly hasDependencyInstalled app typescript-styled-plugin
+56 silly dependencyIsSatisfied [ 'typescript-styled-plugin',
+56 silly dependencyIsSatisfied   '0.2.0',
+56 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+57 verbose dependencyIsSatisfied typescript-styled-plugin true
+58 silly hasDependencyInstalled app typedoc
+59 silly dependencyIsSatisfied [ 'typedoc',
+59 silly dependencyIsSatisfied   '0.9.0',
+59 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+60 verbose dependencyIsSatisfied typedoc true
+61 silly hasDependencyInstalled shared-themes typedoc
+62 silly dependencyIsSatisfied [ 'typedoc',
+62 silly dependencyIsSatisfied   '0.9.0',
+62 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes/node_modules' ]
+63 verbose dependencyIsSatisfied typedoc true
+64 silly hasDependencyInstalled app react-native-typescript-transformer
+65 silly dependencyIsSatisfied [ 'react-native-typescript-transformer',
+65 silly dependencyIsSatisfied   '1.1.4',
+65 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+66 verbose dependencyIsSatisfied react-native-typescript-transformer true
+67 silly hasDependencyInstalled app detox
+68 silly dependencyIsSatisfied [ 'detox',
+68 silly dependencyIsSatisfied   '5.10.0',
+68 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+69 verbose dependencyIsSatisfied detox true
+70 silly hasDependencyInstalled app javascript-obfuscator
+71 silly dependencyIsSatisfied [ 'javascript-obfuscator',
+71 silly dependencyIsSatisfied   '0.12.1',
+71 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+72 verbose dependencyIsSatisfied javascript-obfuscator true
+73 silly hasDependencyInstalled app metro-bundler
+74 silly dependencyIsSatisfied [ 'metro-bundler',
+74 silly dependencyIsSatisfied   '0.20.3',
+74 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+75 verbose dependencyIsSatisfied metro-bundler true
+76 silly hasDependencyInstalled app styled-components
+77 silly dependencyIsSatisfied [ 'styled-components',
+77 silly dependencyIsSatisfied   '2.2.3',
+77 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules' ]
+78 verbose dependencyIsSatisfied styled-components true
+79 silly hasDependencyInstalled shared-themes rollup
+80 silly dependencyIsSatisfied [ 'rollup',
+80 silly dependencyIsSatisfied   '0.51.6',
+80 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes/node_modules' ]
+81 verbose dependencyIsSatisfied rollup false
+82 silly hasDependencyInstalled shared-themes color
+83 silly dependencyIsSatisfied [ 'color',
+83 silly dependencyIsSatisfied   '2.0.1',
+83 silly dependencyIsSatisfied   '/Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes/node_modules' ]
+84 verbose dependencyIsSatisfied color true
+85 silly root dependencies []
+86 silly leaf dependencies {
+86 silly leaf dependencies   "app": [
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "babel-preset-react-native@4.0.0",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "babel-plugin-module-resolver@3.0.0",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "react@16.1.1",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "react-native@0.50.3",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "typescript@2.6.1",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "ts-jest@21.2.2",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "jest@21.2.1",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "rimraf@2.6.2",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "babel-plugin-transform-inline-environment-variables@0.2.0",
+86 silly leaf dependencies       "isSatisfied": false
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "typescript-styled-plugin@0.2.0",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "typedoc@0.9.0",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "react-native-typescript-transformer@1.1.4",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "detox@5.10.0",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "javascript-obfuscator@0.12.1",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "metro-bundler@0.20.3",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "styled-components@2.2.3",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     }
+86 silly leaf dependencies   ],
+86 silly leaf dependencies   "shared-themes": [
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "babel-preset-react-native@4.0.0",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "babel-plugin-module-resolver@3.0.0",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "typescript@2.6.1",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "rimraf@2.6.2",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "typedoc@0.9.0",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "rollup@0.51.6",
+86 silly leaf dependencies       "isSatisfied": false
+86 silly leaf dependencies     },
+86 silly leaf dependencies     {
+86 silly leaf dependencies       "dependency": "color@2.0.1",
+86 silly leaf dependencies       "isSatisfied": true
+86 silly leaf dependencies     }
+86 silly leaf dependencies   ]
+86 silly leaf dependencies }
+87 info Installing external dependencies
+88 verbose actions 2 actions, concurrency 4
+89 silly installInDir app [ 'babel-preset-react-native@4.0.0',
+89 silly installInDir   'babel-plugin-module-resolver@3.0.0',
+89 silly installInDir   'react@16.1.1',
+89 silly installInDir   'react-native@0.50.3',
+89 silly installInDir   'typescript@2.6.1',
+89 silly installInDir   'ts-jest@21.2.2',
+89 silly installInDir   'jest@21.2.1',
+89 silly installInDir   'rimraf@2.6.2',
+89 silly installInDir   'babel-plugin-transform-inline-environment-variables@0.2.0',
+89 silly installInDir   'typescript-styled-plugin@0.2.0',
+89 silly installInDir   'typedoc@0.9.0',
+89 silly installInDir   'react-native-typescript-transformer@1.1.4',
+89 silly installInDir   'detox@5.10.0',
+89 silly installInDir   'javascript-obfuscator@0.12.1',
+89 silly installInDir   'metro-bundler@0.20.3',
+89 silly installInDir   'styled-components@2.2.3' ]
+90 silly installInDir backup /Users/penguin/Workspace/basspj/notic-mobile/packages/app/package.json
+91 silly rename [ '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/package.json',
+91 silly rename   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/package.json.lerna_backup' ]
+92 silly installInDir shared-themes [ 'babel-preset-react-native@4.0.0',
+92 silly installInDir   'babel-plugin-module-resolver@3.0.0',
+92 silly installInDir   'typescript@2.6.1',
+92 silly installInDir   'rimraf@2.6.2',
+92 silly installInDir   'typedoc@0.9.0',
+92 silly installInDir   'rollup@0.51.6',
+92 silly installInDir   'color@2.0.1' ]
+93 silly installInDir backup /Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes/package.json
+94 silly rename [ '/Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes/package.json',
+94 silly rename   '/Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes/package.json.lerna_backup' ]
+95 silly installInDir writing tempJson { dependencies:
+95 silly installInDir    { 'babel-preset-react-native': '4.0.0',
+95 silly installInDir      'babel-plugin-module-resolver': '3.0.0',
+95 silly installInDir      react: '16.1.1',
+95 silly installInDir      'react-native': '0.50.3',
+95 silly installInDir      typescript: '2.6.1',
+95 silly installInDir      'ts-jest': '21.2.2',
+95 silly installInDir      jest: '21.2.1',
+95 silly installInDir      rimraf: '2.6.2',
+95 silly installInDir      'babel-plugin-transform-inline-environment-variables': '0.2.0',
+95 silly installInDir      'typescript-styled-plugin': '0.2.0',
+95 silly installInDir      typedoc: '0.9.0',
+95 silly installInDir      'react-native-typescript-transformer': '1.1.4',
+95 silly installInDir      detox: '5.10.0',
+95 silly installInDir      'javascript-obfuscator': '0.12.1',
+95 silly installInDir      'metro-bundler': '0.20.3',
+95 silly installInDir      'styled-components': '2.2.3' } }
+96 silly installInDir writing tempJson { dependencies:
+96 silly installInDir    { 'babel-preset-react-native': '4.0.0',
+96 silly installInDir      'babel-plugin-module-resolver': '3.0.0',
+96 silly installInDir      typescript: '2.6.1',
+96 silly installInDir      rimraf: '2.6.2',
+96 silly installInDir      typedoc: '0.9.0',
+96 silly installInDir      rollup: '0.51.6',
+96 silly installInDir      color: '2.0.1' } }
+97 silly getExecOpts { cwd: '/Users/penguin/Workspace/basspj/notic-mobile/packages/app' }
+98 silly installInDir [ 'npm', [ 'install' ] ]
+99 silly getExecOpts { cwd: '/Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes' }
+100 silly installInDir [ 'npm', [ 'install' ] ]
+101 silly installInDir cleanup /Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes/package.json
+102 silly renameSync [ '/Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes/package.json.lerna_backup',
+102 silly renameSync   '/Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes/package.json' ]
+103 verbose installed leaf shared-themes
+104 silly installInDir cleanup /Users/penguin/Workspace/basspj/notic-mobile/packages/app/package.json
+105 silly renameSync [ '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/package.json.lerna_backup',
+105 silly renameSync   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/package.json' ]
+106 verbose installed leaf app
+107 info Symlinking packages and binaries
+108 silly existsSync /Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes/package.json
+109 silly hasMatchingDependency app shared-themes
+110 silly existsSync /Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules/shared-themes
+111 silly mkdirp /Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules
+112 silly symlink [ '/Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes',
+112 silly symlink   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules/shared-themes',
+112 silly symlink   'junction' ]
+113 silly createSymbolicLink [ '../../shared-themes',
+113 silly createSymbolicLink   '/Users/penguin/Workspace/basspj/notic-mobile/packages/app/node_modules/shared-themes',
+113 silly createSymbolicLink   'junction' ]
+114 silly packageActions finished app
+115 silly packageActions finished shared-themes
+116 info lifecycle postinstall
+117 silly runScript postinstall shared-themes
+118 silly shared-themes
+119 silly runScript postinstall app
+120 silly app
+121 info lifecycle prepublish
+122 silly runScript prepublish shared-themes
+123 silly runScriptInDir prepublish [] shared-themes
+124 silly getExecOpts { cwd: '/Users/penguin/Workspace/basspj/notic-mobile/packages/shared-themes' }
+125 silly shared-themes
+126 error execute Error occured with 'shared-themes' while running 'npm run prepublish'
+127 error npm run prepublish [shared-themes] Output from stdout:
+128 error npm run prepublish [shared-themes] Output from stderr:
+129 error execute Error occured with 'shared-themes' while running 'npm run prepublish'

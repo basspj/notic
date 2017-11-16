@@ -1,0 +1,133 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "description": "React Native and more",
+  "scripts": {
+    "clean":
+      "rimraf $TMPDIR/react-* && npm cache clean -f && watchman watch-del-all",
+    "e2e-build": "detox build -c ios.sim.debug",
+    "e2e-test": "detox test -c ios.sim.debug",
+    "e2e": "npm run e2e-build && npm run e2e-test",
+    "storybook": "storybook start -p 7007",
+    "start": "react-native start",
+    "start-reset": "react-native start -- --reset-cache",
+    "start-clean": "npm run clean && npm run start-reset",
+    "link": "react-native link",
+    "prebuild": "rimraf 'dist'",
+    "build": "tsc -p tsconfig.dist.json",
+    "postversion":
+      "node node_modules/react-native-version/cli.js --never-amend",
+    "android": "adb reverse tcp:8081 tcp:8081 && react-native run-android",
+    "android-build": "cd android && ./gradlew assembleRelease --stacktrace",
+    "android-install":
+      "cd android && ./gradlew assembleRelease && ./gradlew installRelease",
+    "android-devices": "$ANDROID_HOME/platform-tools/adb devices",
+    "android-shake":
+      "$ANDROID_HOME/platform-tools/adb devices | grep '\\t' | awk '{print $1}' | sed 's/\\s//g' | xargs -I {} $ANDROID_HOME/platform-tools/adb -s {} shell input keyevent 82",
+    "android-log": "react-native log-android",
+    "android-clean": "rimraf android/app/build && rimraf android/build",
+    "ios": "react-native run-ios",
+    "ios-log": "react-native log-ios",
+    "ios-clean": "rimraf ios/build",
+    "native-clean": "npm run android-clean && npm run ios-clean",
+    "bundle-clean-android":
+      "rimraf index.android.bundle.js index.android.bundle.js.meta",
+    "bundle-clean-ios": "rimraf main.jsbundle.js main.jsbundle.js.meta",
+    "obfuscate-android":
+      "javascript-obfuscator index.android.bundle.js --output bundle/android/app/src/main/assets/index.android.bundle --compact true --selfDefending true",
+    "obfuscate-ios":
+      "javascript-obfuscator main.jsbundle.js --output bundle/ios/main.jsbundle --compact true --selfDefending true",
+    "postobfuscate-android": "npm run bundle-clean-android",
+    "postobfuscate-ios": "npm run bundle-clean-ios",
+    "prebundle-android": "rimraf bundle/android",
+    "prebundle-ios": "rimraf bundle/ios",
+    "bundle-android":
+      "react-native bundle --platform android --dev false --entry-file index.js --bundle-output index.android.bundle.js --assets-dest bundle/android/app/src/main/res/",
+    "bundle-ios":
+      "react-native bundle --platform ios --dev false --entry-file index.js --bundle-output main.jsbundle.js --assets-dest bundle/ios",
+    "prebundle": "rimraf bundle",
+    "bundle": "npm run bundle-android && npm run bundle-ios",
+    "postbundle-android": "npm run obfuscate-android",
+    "postbundle-ios": "npm run obfuscate-ios"
+  },
+  "dependencies": {
+    "shared-themes": "0.0.1",
+    "react": "16.1.1",
+    "react-native": "0.50.3",
+    "styled-components": "2.2.3"
+  },
+  "devDependencies": {
+    "@storybook/react-native": "3.2.16",
+    "@storybook/addon-actions": "3.2.16",
+    "@storybook/addon-links": "3.2.16",
+    "babel-preset-react-native": "4.0.0",
+    "babel-plugin-module-resolver": "3.0.0",
+    "typescript": "2.6.1",
+    "typescript-styled-plugin": "0.2.0",
+    "typedoc": "0.9.0",
+    "react-native-typescript-transformer": "1.1.4",
+    "jest": "21.2.1",
+    "ts-jest": "21.2.2",
+    "detox": "5.10.0",
+    "javascript-obfuscator": "0.12.1",
+    "rimraf": "2.6.2",
+    "metro-bundler": "0.20.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json",
+        "useBabelrc": true
+      }
+    },
+    "transform": {
+      ".+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
+      ".+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/tests/.*.spec.(js|ts|tsx)?$",
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
+    "moduleDirectories": ["node_modules", "src"],
+    "moduleNameMapper": {
+      "~/(.*)": "<rootDir>/src/$1",
+      "~tests/(.*)": "<rootDir>/tests/$1",
+      "~e2e/(.*)": "<rootDir>/e2e/$1"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/e2e/init.ts"
+  },
+  "detox": {
+    "runner": "jest",
+    "configurations": {
+      "android.emu.debug": {
+        "binaryPath": "android/app/build/outputs/apk/app-debug.apk",
+        "build":
+          "pushd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && popd",
+        "type": "android.emulator",
+        "name": "Nexus_5X_API_26"
+      },
+      "android.emu.release": {
+        "binaryPath": "android/app/build/outputs/apk/app-release.apk",
+        "build":
+          "pushd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release && popd",
+        "type": "android.emulator",
+        "name": "Nexus_5X_API_26"
+      },
+      "ios.sim.debug": {
+        "binaryPath":
+          "ios/build/Build/Products/Debug-iphonesimulator/notic.app",
+        "build":
+          "xcodebuild -project ios/notic.xcodeproj -scheme notic -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "name": "iPhone 6"
+      },
+      "ios.sim.release": {
+        "binaryPath":
+          "ios/build/Build/Products/Release-iphonesimulator/notic.app",
+        "build":
+          "export RCT_NO_LAUNCH_PACKAGER=true && xcodebuild -project ios/notic.xcodeproj -scheme notic -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "name": "iPhone 6"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-native",
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["src/*"],
+      "~tests/*": ["tests/*"],
+      "~e2e/*": ["e2e/*"]
+    },
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ],
+    "noEmit": true
+  },
+  "include": ["src", "tests", "e2e"],
+  "exclude": ["node_modules"]
+}

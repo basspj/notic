@@ -1,0 +1,6 @@
+{
+  "path-intellisense.mappings": {
+    "~": "${workspaceRoot}/packages/shared-themes/src",
+    "~tests": "${workspaceRoot}/packages/shared-themes/tests"
+  }
+}
