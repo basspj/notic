@@ -72,8 +72,7 @@
     "detox": "5.10.0",
     "javascript-obfuscator": "0.12.2",
     "rimraf": "2.6.2",
-    "metro-bundler": "0.20.3",
-    "haul": "1.0.0-beta.10"
+    "metro-bundler": "0.20.3"
   },
   "jest": {
     "preset": "react-native",
