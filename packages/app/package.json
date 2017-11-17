@@ -9,6 +9,7 @@
     "e2e-test": "detox test -c ios.sim.debug",
     "e2e": "npm run e2e-build && npm run e2e-test",
     "storybook": "storybook start -p 7007",
+    "storybook-reset": "npm run storybook -- --reset-cache",
     "start": "react-native start",
     "start-reset": "react-native start -- --reset-cache",
     "start-clean": "npm run clean && npm run start-reset",
@@ -67,11 +68,12 @@
     "typedoc": "0.9.0",
     "react-native-typescript-transformer": "1.1.4",
     "jest": "21.2.1",
-    "ts-jest": "21.2.2",
+    "ts-jest": "21.2.3",
     "detox": "5.10.0",
-    "javascript-obfuscator": "0.12.1",
+    "javascript-obfuscator": "0.12.2",
     "rimraf": "2.6.2",
-    "metro-bundler": "0.20.3"
+    "metro-bundler": "0.20.3",
+    "haul": "1.0.0-beta.10"
   },
   "jest": {
     "preset": "react-native",
