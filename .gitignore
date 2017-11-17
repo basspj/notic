@@ -57,3 +57,6 @@ coverage
 
 # bundle
 bundle
+
+#lerna
+lerna-debug.log
