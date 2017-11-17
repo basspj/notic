@@ -1,7 +1,0 @@
-{
-  "path-intellisense.mappings": {
-    "~": "${workspaceRoot}/packages/app/src",
-    "~tests": "${workspaceRoot}/packages/app/tests",
-    "~e2e": "${workspaceRoot}/packages/app/e2e"
-  }
-}

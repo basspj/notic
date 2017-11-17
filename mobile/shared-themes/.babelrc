@@ -1,0 +1,20 @@
+{
+  "presets": ["react-native"],
+  "sourceMaps": "inline",
+  "env": {
+    "packages": {
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["."],
+            "alias": {
+              "~": "./mobile/shared-themes/src",
+              "~tests": "./mobile/shared-themes/tests"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}

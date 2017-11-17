@@ -1,0 +1,7 @@
+{
+  "path-intellisense.mappings": {
+    "~": "${workspaceRoot}/mobile/app/src",
+    "~tests": "${workspaceRoot}/mobile/app/tests",
+    "~e2e": "${workspaceRoot}/mobile/app/e2e"
+  }
+}

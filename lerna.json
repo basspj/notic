@@ -10,5 +10,5 @@
       "ignore": ["*.md", "tests/**"]
     }
   },
-  "packages": ["packages/*"]
+  "packages": ["mobile/*", "web/*"]
 }

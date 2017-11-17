@@ -4,10 +4,7 @@
       "path": "."
     },
     {
-      "path": "mobile/app"
-    },
-    {
-      "path": "mobile/shared-themes"
+      "path": "web/app"
     }
   ],
   "settings": {
@@ -59,7 +56,6 @@
       "shinnn.stylelint",
       "steoates.autoimport",
       "streetsidesoftware.code-spell-checker",
-      "vsmobile.vscode-react-native",
       "wayou.vscode-todo-highlight",
       "xabikos.ReactSnippets"
     ]

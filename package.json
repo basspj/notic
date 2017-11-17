@@ -1,7 +1,7 @@
 {
-  "name": "notic-mobile",
+  "name": "notic",
   "version": "0.0.1",
-  "description": "React Native and more",
+  "description": "React, React Native and more",
   "private": true,
   "scripts": {
     "script-postinstall":
@@ -13,9 +13,9 @@
     "clean":
       "rimraf $TMPDIR/react-* && npm cache clean -f && watchman watch-del-all",
     "clean-coverage": "rimraf 'coverage'",
-    "clean-dist": "rimraf 'packages/*/dist'",
-    "clean-node": "rimraf 'packages/*/node_modules'",
-    "clean-packages": "rimraf 'packages/*/dist' 'packages/*/node_modules'",
+    "clean-dist": "rimraf '{mobile,web}/*/dist'",
+    "clean-node": "rimraf '{mobile,web}/*/node_modules'",
+    "clean-packages": "rimraf '{mobile,web}/*/{dist,node_modules}'",
     "tslint": "tslint -c tslint.json '**/*.ts{,x}'",
     "tslint-type": "npm run lint -- --type-check",
     "eslint": "eslint -c .eslintrc '**/*.ts{,x}'",
@@ -87,7 +87,7 @@
     "stylelint-processor-styled-components": "1.0.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-config-standard": "17.0.0",
-    "rollup": "0.51.6",
+    "rollup": "0.51.7",
     "rollup-plugin-alias": "1.4.0",
     "rollup-plugin-commonjs": "8.2.6",
     "rollup-plugin-node-resolve": "3.0.0",
@@ -102,12 +102,12 @@
       "path": "node_modules/cz-conventional-changelog"
     }
   },
-  "workspaces": ["packages/*"],
-  "repository": "basspj/notic-mobile",
+  "workspaces": ["mobile/*", "web/*"],
+  "repository": "basspj/notic",
   "author": "basspj",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/basspj/notic-mobile/issues"
+    "url": "https://github.com/basspj/notic/issues"
   },
-  "homepage": "https://github.com/basspj/notic-mobile#readme"
+  "homepage": "https://github.com/basspj/notic#readme"
 }
