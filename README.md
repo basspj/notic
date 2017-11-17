@@ -1,8 +1,8 @@
-# notic-mobile
-React Native and more
+# notic
+React, React Native and more
 
-![Travis CI](https://travis-ci.org/basspj/notic-mobile.svg?branch=master)
-[![codecov](https://codecov.io/gh/basspj/notic-mobile/branch/master/graph/badge.svg)](https://codecov.io/gh/basspj/notic-mobile)
+![Travis CI](https://travis-ci.org/basspj/notic.svg?branch=master)
+[![codecov](https://codecov.io/gh/basspj/notic/branch/master/graph/badge.svg)](https://codecov.io/gh/basspj/notic-mobile)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
