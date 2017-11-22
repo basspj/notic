@@ -39,6 +39,10 @@ React, React Native and more
 
 - [x] [TypeScript](https://github.com/Microsoft/TypeScript)
 
+#### Npm Client
+
+- [ ] [Yarn](https://github.com/yarnpkg/yarn)
+
 #### Structure
 
 - [x] [Lerna](https://github.com/lerna/lerna)
@@ -105,14 +109,6 @@ React, React Native and more
 
 - [x] [React Native](https://github.com/facebook/react-native)
 
-
-
-### Web
-
-##### Framework
-
-- [ ] [React](https://github.com/facebook/react)
-
 ##### Style
 
 - [ ] [react-native-ui-lib](https://github.com/wix/react-native-ui-lib)
@@ -124,3 +120,11 @@ React, React Native and more
 ##### Dev Tools
 
 - [x] [Haul](https://github.com/callstack/haul)
+
+
+### Web
+
+##### Framework
+
+- [ ] [React](https://github.com/facebook/react)
+
