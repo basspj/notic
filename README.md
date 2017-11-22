@@ -8,13 +8,9 @@ React, React Native and more
 
 
 
-## To-Do
+## To-Do - Shared
 
-
-
-### Shared
-
-#### Design
+### Design
 
 - [ ] Feature-First
 - [ ] Mono-Repo
@@ -27,108 +23,106 @@ React, React Native and more
 - [ ] Customizable Themes
 - [ ] Dark Mode
 
-#### Follow Style or Guideline
+### Follow Style or Guideline
 
 - [x] [Airbnb's Javascript](https://github.com/airbnb/javascript)
 - [ ] [SemVer](http://semver.org/)
 
-#### IDE
+### IDE
 
 - [x] [VSCode](https://github.com/Microsoft/vscode)
 
-#### Language
+### Language
 
 - [x] [TypeScript](https://github.com/Microsoft/TypeScript)
 
-#### Npm Client
+### Npm Client
 
 - [x] [Yarn](https://github.com/yarnpkg/yarn)
 
-#### Structure
+### Structure
 
 - [x] [Lerna](https://github.com/lerna/lerna)
 
-#### Style
+### Style
 
 - [x] [Styled-Components](https://github.com/styled-components/styled-components)
 
-#### App State
+### App State
 
 - [ ] [Redux](https://github.com/reactjs/redux)
 - [ ] [Redux-Saga](https://github.com/redux-saga/redux-saga)
 
-#### Networking
+### Networking
 
 - [ ] [Axios](https://github.com/axios/axios)
 
-#### Test
+### Test
 
 - [x] [Jest](https://github.com/facebook/jest)
 - [x] [Enzyme](https://github.com/airbnb/enzyme)
 
-#### Dev Tools
+### Dev Tools
 
 - [x] [Storybook](https://github.com/storybooks/storybook)
 
-#### Linting
+### Linting
 
 - [x] [Eslint](https://github.com/eslint/eslint)
 - [x] [Tslint](https://github.com/palantir/tslint)
 - [x] [Stylelint](https://github.com/stylelint/stylelint)
 
-#### Code-Formatting
+### Code-Formatting
 
 - [x] [Prettier](https://github.com/prettier/prettier)
 - [x] [EditorConfig](http://editorconfig.org)
 
-#### Commit Tools
+### Commit Tools
 
 - [x] [Commitizen](https://github.com/commitizen/cz-cli)
 - [x] [Commitlint](https://github.com/marionebl/commitlint)
 - [x] [Lint-Staged](https://github.com/okonet/lint-staged)
 - [x] [Husky](https://github.com/typicode/husky)
 
-#### CI
+### CI
 
 - [x] [TravisCI](https://travis-ci.com)
 - [x] [Codecov](https://codecov.io/)
 
-#### Doc Tools
+### Doc Tools
 
 - [x] [TypeDoc](https://github.com/TypeStrong/typedoc)
 
 
 
+## To-Do - Mobile
 
-### Mobile
-
-#### Design
+### Design
 
 - [ ] Offline-Using
 - [ ] Battery Saver Mode
 
-#### Framework
+### Framework
 
 - [x] [React Native](https://github.com/facebook/react-native)
 
-##### Style
+### Style
 
 - [ ] [react-native-ui-lib](https://github.com/wix/react-native-ui-lib)
 
-##### Test
+### Test
 
 - [x] [Detox](https://github.com/wix/detox)
 
-##### Dev Tools
+### Dev Tools
 
 - [x] [Haul](https://github.com/callstack/haul)
 
 
 
+## To-Do - Web
 
-### Web
-
-##### Framework
+### Framework
 
 - [ ] [React](https://github.com/facebook/react)
 
