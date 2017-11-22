@@ -6,7 +6,7 @@
 import React from 'react';
 import { Platform, View, Text } from 'react-native';
 import styled, { ThemeProvider } from 'styled-components/native';
-import { moderateHorizontalScale } from 'shared-themes';
+import { moderateHorizontalScale } from '@mobile/themes';
 
 import { EnvConfig } from './config';
 

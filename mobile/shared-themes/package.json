@@ -1,18 +1,18 @@
 {
-  "name": "shared-themes",
+  "name": "@mobile/themes",
   "version": "0.0.1",
-  "description": "Shared Themes",
+  "description": "Mobile Themes",
   "main": "dist/index.umd.js",
   "module": "dist/index.es5.js",
   "typings": "dist/types/index.d.ts",
   "files": ["dist"],
   "scripts": {
     "clean-build": "rimraf './build'",
-    "prebuild": "npm run clean-build",
+    "prebuild": "yarn clean-build",
     "build": "tsc -p tsconfig.json",
     "doc": "typedoc --out dist/docs --target es6 --theme minimal src",
-    "dist": "rollup -c rollup.config.ts && npm run clean-build && npm run doc",
-    "prepublish": "npm run build && npm run dist",
+    "dist": "rollup -c rollup.config.ts && yarn clean-build && yarn doc",
+    "prepublish": "yarn build && yarn dist",
     "storybook": "storybook start -p 7007"
   },
   "peerDependencies": {
@@ -27,7 +27,7 @@
     "babel-plugin-module-resolver": "3.0.0",
     "typescript": "2.6.1",
     "typedoc": "0.9.0",
-    "rollup": "0.51.6",
+    "rollup": "0.51.8",
     "rimraf": "2.6.2"
   }
 }

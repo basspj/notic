@@ -1,26 +1,26 @@
 {
-  "name": "app",
+  "name": "mobile-app",
   "version": "0.0.1",
   "description": "React Native and more",
   "scripts": {
     "clean":
-      "rimraf $TMPDIR/react-* && npm cache clean -f && watchman watch-del-all",
+      "rimraf $TMPDIR/react-* && yarn cache clean && watchman watch-del-all",
     "e2e-build": "detox build -c ios.sim.debug",
     "e2e-test": "detox test -c ios.sim.debug",
-    "e2e": "npm run e2e-build && npm run e2e-test",
+    "e2e": "yarn e2e-build && yarn e2e-test",
     "storybook": "storybook start -p 7007 --haul webpack.haul.storybook.js",
-    "storybook-ios": "npm run storybook -- --platform ios",
-    "storybook-android": "npm run storybook -- --platform android",
-    "storybook-all": "npm run storybook -- --platform all",
-    "storybook-reset": "npm run storybook -- --reset-cache",
+    "storybook-ios": "yarn storybook -- --platform ios",
+    "storybook-android": "yarn storybook -- --platform android",
+    "storybook-all": "yarn storybook -- --platform all",
+    "storybook-reset": "yarn storybook -- --reset-cache",
     "start": "haul start",
     "link": "react-native link",
-    "prebuild": "rimraf 'dist'",
-    "build": "tsc -p tsconfig.dist.json",
+    "predist": "rimraf 'dist'",
+    "dist": "tsc -p tsconfig.dist.json",
     "postversion":
       "node node_modules/react-native-version/cli.js --never-amend",
     "preandroid": "adb reverse tcp:8081 tcp:8081",
-    "android": "haul start --platform android",
+    "android": "yarn start -- --platform android",
     "android-build": "cd android && ./gradlew assembleRelease --stacktrace",
     "android-install":
       "cd android && ./gradlew assembleRelease && ./gradlew installRelease",
@@ -29,35 +29,36 @@
       "$ANDROID_HOME/platform-tools/adb devices | grep '\\t' | awk '{print $1}' | sed 's/\\s//g' | xargs -I {} $ANDROID_HOME/platform-tools/adb -s {} shell input keyevent 82",
     "android-log": "react-native log-android",
     "clean-android": "rimraf android/app/build && rimraf android/build",
-    "ios": "haul start --platform ios",
+    "ios": "yarn start -- --platform ios",
     "ios-log": "react-native log-ios",
     "clean-ios": "rimraf ios/build",
-    "clean-native": "npm run android-clean && npm run ios-clean",
-    "bundle-clean-android":
-      "rimraf index.android.bundle.js index.android.bundle.js.meta",
-    "bundle-clean-ios": "rimraf main.jsbundle.js main.jsbundle.js.meta",
-    "obfuscate-android":
-      "javascript-obfuscator index.android.bundle.js --output bundle/android/app/src/main/assets/index.android.bundle --compact true --selfDefending true",
-    "obfuscate-ios":
-      "javascript-obfuscator main.jsbundle.js --output bundle/ios/main.jsbundle --compact true --selfDefending true",
-    "postobfuscate-android": "npm run bundle-clean-android",
-    "postobfuscate-ios": "npm run bundle-clean-ios",
+    "clean-native": "yarn clean-android && yarn clean-ios",
     "prebundle-android": "rimraf bundle/android",
     "prebundle-ios": "rimraf bundle/ios",
+    "bundle-option": "haul bundle --dev false --minify true",
     "bundle-android":
-      "react-native bundle --platform android --dev false --entry-file index.js --bundle-output index.android.bundle.js --assets-dest bundle/android/app/src/main/res/",
+      "yarn bundle-option -- --platform android --bundle-output bundle/android/index.android.bundle.js --assets-dest bundle/android/app/src/main/res/",
     "bundle-ios":
-      "react-native bundle --platform ios --dev false --entry-file index.js --bundle-output main.jsbundle.js --assets-dest bundle/ios",
+      "yarn bundle-option -- --platform ios --bundle-output bundle/ios/main.jsbundle.js --assets-dest bundle/ios",
     "prebundle": "rimraf bundle",
-    "bundle": "npm run bundle-android && npm run bundle-ios",
-    "postbundle-android": "npm run obfuscate-android",
-    "postbundle-ios": "npm run obfuscate-ios"
+    "bundle": "yarn bundle-android && yarn bundle-ios",
+    "postbundle-android": "yarn obfuscate-android",
+    "postbundle-ios": "yarn obfuscate-ios",
+    "obfuscate-android":
+      "javascript-obfuscator bundle/android/index.android.bundle.js --output bundle/android/app/src/main/assets/index.android.bundle --compact true --selfDefending true",
+    "obfuscate-ios":
+      "javascript-obfuscator bundle/ios/main.jsbundle.js --output bundle/ios/main.jsbundle --compact true --selfDefending true",
+    "postobfuscate-android":
+      "rimraf 'bundle/android/{index.android.bundle.js,index.android.bundle.js.map}'",
+    "postobfuscate-ios":
+      "rimraf 'bundle/ios/{main.jsbundle.js,main.jsbundle.js.map}'"
   },
   "dependencies": {
-    "shared-themes": "0.0.1",
+    "@mobile/themes": "0.0.1",
     "react": "16.1.1",
     "react-native": "0.50.3",
-    "styled-components": "2.2.3"
+    "styled-components": "2.2.3",
+    "haul": "1.0.0-beta.10"
   },
   "devDependencies": {
     "@storybook/react-native": "3.2.16",
@@ -74,10 +75,8 @@
     "detox": "5.10.0",
     "javascript-obfuscator": "0.12.2",
     "rimraf": "2.6.2",
-    "metro-bundler": "0.20.3",
-    "haul": "1.0.0-beta.10",
     "babel-loader": "7.1.2",
-    "awesome-typescript-loader": "3.3.0"
+    "awesome-typescript-loader": "3.4.0"
   },
   "jest": {
     "preset": "react-native",
