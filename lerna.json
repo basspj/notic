@@ -10,5 +10,6 @@
       "ignore": ["*.md", "tests/**"]
     }
   },
-  "packages": ["mobile/*", "web/*"]
+  "packages": ["mobile/*", "web/*"],
+  "npmClient": "yarn"
 }
