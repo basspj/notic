@@ -41,7 +41,7 @@ React, React Native and more
 
 #### Npm Client
 
-- [ ] [Yarn](https://github.com/yarnpkg/yarn)
+- [x] [Yarn](https://github.com/yarnpkg/yarn)
 
 #### Structure
 
