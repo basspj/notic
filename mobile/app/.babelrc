@@ -15,7 +15,7 @@
     ]
   ],
   "env": {
-    "packages": {
+    "mobile": {
       "plugins": [
         [
           "module-resolver",

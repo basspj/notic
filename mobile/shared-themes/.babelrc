@@ -2,7 +2,7 @@
   "presets": ["react-native"],
   "sourceMaps": "inline",
   "env": {
-    "packages": {
+    "mobile": {
       "plugins": [
         [
           "module-resolver",
