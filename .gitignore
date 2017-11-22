@@ -55,6 +55,9 @@ buck-out/
 # coverage
 coverage
 
+# dist
+dist
+
 # bundle
 bundle
 
