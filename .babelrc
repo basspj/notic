@@ -1,4 +1,11 @@
 {
-  "presets": ["react-native"],
-  "sourceMaps": "inline"
+  "sourceMaps": "inline",
+  "env": {
+    "mobile": {
+      "presets": ["react-native"]
+    },
+    "web": {
+      "presets": ["es2015", "react"]
+    }
+  }
 }
