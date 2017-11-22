@@ -21,7 +21,7 @@
     "eslint": "eslint -c .eslintrc '**/*.ts{,x}'",
     "stylelint": "stylelint -c .stylelintrc '**/*.ts{,x}'",
     "lint": "yarn tslint && yarn eslint && yarn stylelint",
-    "test": "yarn test-mobile && yarn test-web",
+    "test": "yarn test-mobile",
     "test-mobile": "BABEL_ENV=mobile jest -c jest.mobile.json --no-cache",
     "test-web": "BABEL_ENV=web jest -c jest.web.json --no-cache",
     "posttest": "codecov -f coverage/*.json",
