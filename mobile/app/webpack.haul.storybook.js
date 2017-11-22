@@ -1,15 +1,13 @@
 const path = require('path');
 
-const pathResolve = (dir) => path.join(__dirname, '..', dir);
-
 module.exports = ({ platform }, { module, resolve }) => ({
   entry: ['./storybook/index.ts'],
   resolve: {
     ...resolve,
     extensions: ['.ts', '.tsx', '.json', ...resolve.extensions],
     alias: {
-      '@': pathResolve('storybook'),
-      '~': pathResolve('src'),
+      '~': path.join(__dirname, '..', 'src'),
+      '~story': path.join(__dirname, '..', 'storybook'),
     },
     modules: [
       path.resolve('./storybook'),
