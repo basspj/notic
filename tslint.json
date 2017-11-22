@@ -1,11 +1,9 @@
 {
   "defaultSeverity": "error",
-  "extends": ["tslint:latest", "tslint-config-airbnb"],
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-airbnb"],
   "rules": {
     //override latest
     "no-submodule-imports": false,
-
-    //override recommended
     "no-switch-case-fall-through": true,
     "no-unnecessary-callback-wrapper": true,
     "no-unnecessary-qualifier": true,
@@ -23,6 +21,9 @@
     "no-empty-interface": false,
     "no-empty": false,
     "quotemark": false,
+
+    //override react
+    "jsx-boolean-value": false,
 
     //override airbnb
     "import-name": false,
