@@ -1,0 +1,29 @@
+{
+  "preset": "react",
+  "globals": {
+    "ts-jest": {
+      "tsConfigFile": "tsconfig.json",
+      "useBabelrc": true
+    }
+  },
+  "transform": {
+    "^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
+    ".+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+  },
+  "modulePathIgnorePatterns": ["web/.*/dist"],
+  "moduleDirectories": ["node_modules"],
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
+  "setupFiles": [
+    "<rootDir>/scripts/jest/shim.ts",
+    "<rootDir>/scripts/jest/setup.ts"
+  ],
+  "setupTestFrameworkScriptFile":
+    "<rootDir>/node_modules/jest-enzyme/lib/index.js",
+  "testRegex": "/tests/.*.test.(ts|tsx)?$",
+  "testPathIgnorePatterns": ["/node_modules/", "/web/.*/dist"],
+  "collectCoverage": true,
+  "coverageReporters": ["json"],
+  "coveragePathIgnorePatterns": ["/node_modules/", "/tests/", "/scripts/"],
+  "collectCoverageFrom": ["web/**/src/*.ts{,x}"],
+  "mapCoverage": true
+}
