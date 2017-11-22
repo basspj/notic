@@ -1,16 +1,16 @@
-const path = require('path');
+import path from 'path';
 
-module.exports = ({ platform }, { module, resolve }) => ({
-  entry: ['./storybook/index.ts'],
+const config = ({}, { module, resolve }: any) => ({
+  entry: ['./src'],
   resolve: {
     ...resolve,
     extensions: ['.ts', '.tsx', '.json', ...resolve.extensions],
     alias: {
       '~': path.join(__dirname, '..', 'src'),
-      '~story': path.join(__dirname, '..', 'storybook'),
+      '~e2e': path.join(__dirname, '..', 'e2e'),
+      '~tests': path.join(__dirname, '..', 'tests'),
     },
     modules: [
-      path.resolve('./storybook'),
       path.resolve('./src'),
       path.resolve('./node_modules'),
       'node_modules',
@@ -28,3 +28,5 @@ module.exports = ({ platform }, { module, resolve }) => ({
     ],
   },
 });
+
+module.exports = config;
