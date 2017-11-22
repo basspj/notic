@@ -20,6 +20,12 @@
     "sourceType": "module"
   },
   "rules": {
+    // react
+    "react/default-props-match-prop-types": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-space-before-closing": 0,
+    "react/no-unescaped-entities": 0,
+
     // override till this bug is resolved https://github.com/yannickcr/eslint-plugin-react/issues/1499
     "react/no-unsecaped-entites": 0,
     "react/self-closing-comp": 0,
@@ -34,30 +40,28 @@
     "no-useless-constructor": 0,
     "space-infix-ops": 0,
 
+    // prettier
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-single"],
+    "no-mixed-operators": 0, // not working
+
+    // for convenient
+    "jsx-a11y/accessible-emoji": 0,
+
     // override
     "import/extensions": 0,
     "import/no-extraneous-dependencies": 0,
     "import/no-unresolved": 0,
     "import/prefer-default-export": 0,
     "import/resolver": 0,
+    "import/first": 0,
     "object-curly-newline": 0,
     "object-curly-spacing": 0,
-    "react/default-props-match-prop-types": 0,
-    "react/jsx-filename-extension": 0,
-    "react/jsx-space-before-closing": 0,
-    "react/no-unescaped-entities": 0,
-    "no-confusing-arrow": 0,
     "operator-linebreak": 0,
     "function-paren-newline": 0,
+    "no-confusing-arrow": 0,
     "no-underscore-dangle": 0,
-
-    // for convenient
-    "jsx-a11y/accessible-emoji": 0,
-
-    // prettier
-    "quotes": ["error", "single"],
-    "jsx-quotes": ["error", "prefer-single"],
-    "no-mixed-operators": 0 // not working
+    "no-empty-pattern": 0
   },
   "globals": {
     "__DEV__": false
