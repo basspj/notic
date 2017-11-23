@@ -1,6 +1,6 @@
 import path from 'path';
 
-const config = ({}, { module, resolve }: any) => ({
+const config = ({ platform }, { module, resolve }) => ({
   entry: ['./storybook'],
   resolve: {
     ...resolve,

@@ -1,6 +1,6 @@
 import path from 'path';
 
-const config = ({}, { module, resolve }: any) => ({
+const config = ({ platform }, { module, resolve }) => ({
   entry: ['./src'],
   resolve: {
     ...resolve,
@@ -10,11 +10,7 @@ const config = ({}, { module, resolve }: any) => ({
       '~e2e': path.join(__dirname, '..', 'e2e'),
       '~tests': path.join(__dirname, '..', 'tests'),
     },
-    modules: [
-      path.resolve('./src'),
-      path.resolve('./node_modules'),
-      'node_modules',
-    ],
+    modules: [path.resolve('./src'), path.resolve('./node_modules'), 'node_modules'],
   },
   module: {
     ...module,
