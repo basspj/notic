@@ -1,4 +1,4 @@
-import { TThemeKeys } from '~/themes';
+import { TThemeKeys } from '~/src/themes';
 
 import { Dark as dark, Light as light, IThemeColors } from './Themes';
 import { IThemesColors } from './type';

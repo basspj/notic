@@ -6,8 +6,7 @@ const config = ({ platform }, { module, resolve }) => ({
     ...resolve,
     extensions: ['.ts', '.tsx', '.json', ...resolve.extensions],
     alias: {
-      '~': path.join(__dirname, '..', 'src'),
-      '~story': path.join(__dirname, '..', 'storybook'),
+      '~': path.join(__dirname, '..', '.'),
     },
     modules: [
       path.resolve('./storybook'),

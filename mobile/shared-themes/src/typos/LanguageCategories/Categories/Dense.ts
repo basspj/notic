@@ -1,8 +1,8 @@
 // Chinese, Japanese, and Korean.
 
-import { sp } from '~/typos/utils';
-import { IStyles } from '~/typos/Styles';
-import { Typefaces } from '~/typos/Typefaces';
+import { sp } from '~/src/typos/utils';
+import { IStyles } from '~/src/typos/Styles';
+import { Typefaces } from '~/src/typos/Typefaces';
 
 export const Dense: IStyles = {
   display4: {

@@ -1,4 +1,4 @@
-import { IStyles } from '~/typos';
+import { IStyles } from '~/src/typos';
 
 import { TLanguageCategoryKeys } from './Categories';
 import { ILocaleKeys } from './Locale';

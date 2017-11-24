@@ -1,4 +1,4 @@
-import { EnvConfig } from '~/config';
+import { EnvConfig } from '~/src/config';
 
 import { init } from '../init';
 

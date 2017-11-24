@@ -1,4 +1,4 @@
-import { Colors, alpha } from '~/colors';
+import { Colors, alpha } from '~/src/colors';
 
 import { IThemeTypoColors } from './type';
 

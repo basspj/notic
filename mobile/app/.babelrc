@@ -7,9 +7,7 @@
       {
         "root": ["."],
         "alias": {
-          "~": "./src",
-          "~tests": "./tests",
-          "~e2e": "./e2e"
+          "~": "."
         }
       }
     ]
@@ -22,9 +20,7 @@
           {
             "root": ["."],
             "alias": {
-              "~": "./mobile/app/src",
-              "~tests": "./mobile/app/tests",
-              "~e2e": "./mobile/app/e2e"
+              "~": "./mobile/app"
             }
           }
         ]

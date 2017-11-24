@@ -75,10 +75,10 @@
     "jest": "21.2.1",
     "ts-jest": "21.2.3",
     "detox": "5.10.0",
-    "javascript-obfuscator": "0.12.2",
-    "rimraf": "2.6.2",
     "babel-loader": "7.1.2",
-    "awesome-typescript-loader": "3.4.0"
+    "awesome-typescript-loader": "3.4.0",
+    "javascript-obfuscator": "0.12.2",
+    "rimraf": "2.6.2"
   },
   "jest": {
     "preset": "react-native",
@@ -96,9 +96,7 @@
     "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
     "moduleDirectories": ["node_modules", "src"],
     "moduleNameMapper": {
-      "~/(.*)": "<rootDir>/src/$1",
-      "~tests/(.*)": "<rootDir>/tests/$1",
-      "~e2e/(.*)": "<rootDir>/e2e/$1"
+      "~/(.*)": "<rootDir>/$1"
     },
     "setupTestFrameworkScriptFile": "<rootDir>/e2e/init.ts"
   },

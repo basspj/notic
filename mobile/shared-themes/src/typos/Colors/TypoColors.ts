@@ -1,4 +1,4 @@
-import { TThemeKeys } from '~/themes';
+import { TThemeKeys } from '~/src/themes';
 
 import {
   TypoDark as dark,

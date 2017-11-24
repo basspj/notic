@@ -1,4 +1,4 @@
-import { Dark } from '~/colors';
+import { Dark } from '~/src/colors';
 
 describe('Themes', () => {
   test('Theme Dark exists', () => {

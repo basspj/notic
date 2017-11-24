@@ -6,9 +6,7 @@ const config = ({ platform }, { module, resolve }) => ({
     ...resolve,
     extensions: ['.ts', '.tsx', '.json', ...resolve.extensions],
     alias: {
-      '~': path.join(__dirname, '..', 'src'),
-      '~e2e': path.join(__dirname, '..', 'e2e'),
-      '~tests': path.join(__dirname, '..', 'tests'),
+      '~': path.join(__dirname, '..', '.'),
     },
     modules: [path.resolve('./src'), path.resolve('./node_modules'), 'node_modules'],
   },

@@ -9,8 +9,7 @@
           {
             "root": ["."],
             "alias": {
-              "~": "./mobile/shared-themes/src",
-              "~tests": "./mobile/shared-themes/tests"
+              "~": "./mobile/shared-themes"
             }
           }
         ]
