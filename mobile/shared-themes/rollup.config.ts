@@ -32,7 +32,7 @@ export default {
     // Resolve source maps to the original source
     sourceMaps(),
     alias({
-      '~': path.join(__dirname, '.', 'build'),
+      '~/src': path.join(__dirname, '.', 'build'),
       resolve: ['.js', '.jsx', '/index.js'],
     }),
   ],
