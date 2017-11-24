@@ -6,7 +6,7 @@ const config = ({ platform }, { module, resolve }) => ({
     ...resolve,
     extensions: ['.ts', '.tsx', '.json', ...resolve.extensions],
     alias: {
-      '~': path.join(__dirname, '..', '.'),
+      '~': path.join(__dirname, '..'),
     },
     modules: [
       path.resolve('./storybook'),
@@ -21,7 +21,7 @@ const config = ({ platform }, { module, resolve }) => ({
       {
         test: /\.(ts|tsx)$/,
         enforce: 'pre',
-        use: ['tslint-loader', 'eslint-loader'],
+        use: ['tslint-loader', 'eslint-loader', 'stylelint-custom-processor-loader'],
       },
       {
         test: /\.tsx?$/,

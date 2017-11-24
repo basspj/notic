@@ -4777,7 +4777,7 @@ loader-runner@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/loader-runner/-/loader-runner-2.3.0.tgz#f482aea82d543e07921700d5a46ef26fdac6b8a2"
 
-loader-utils@^1.0.2, loader-utils@^1.1.0:
+loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.1.0.tgz#c98aef488bcceda2ffb5e2de646d6a754429f5cd"
   dependencies:
@@ -6430,7 +6430,7 @@ react-native@0.50.3:
     xmldoc "^0.4.0"
     yargs "^9.0.0"
 
-react-proxy@^3.0.0-alpha.0:
+react-proxy@^3.0.0-alpha.1:
   version "3.0.0-alpha.1"
   resolved "https://registry.yarnpkg.com/react-proxy/-/react-proxy-3.0.0-alpha.1.tgz#4400426bcfa80caa6724c7755695315209fa4b07"
   dependencies:
@@ -7366,6 +7366,12 @@ styled-components@2.2.3:
     prop-types "^15.5.4"
     stylis "3.x"
     supports-color "^3.2.3"
+
+stylelint-custom-processor-loader@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/stylelint-custom-processor-loader/-/stylelint-custom-processor-loader-0.4.0.tgz#da9448d2341c3cb769d7c49bc36532e4bfd59d9d"
+  dependencies:
+    loader-utils "~1.1.0"
 
 stylis@3.x:
   version "3.4.3"
