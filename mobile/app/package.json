@@ -77,6 +77,8 @@
     "detox": "5.10.0",
     "babel-loader": "7.1.2",
     "awesome-typescript-loader": "3.4.0",
+    "tslint-loader": "3.5.3",
+    "eslint-loader": "1.9.0",
     "javascript-obfuscator": "0.12.2",
     "rimraf": "2.6.2"
   },

@@ -14,6 +14,11 @@ const config = ({ platform }, { module, resolve }) => ({
     ...module,
     rules: [
       {
+        test: /\.(ts|tsx)$/,
+        enforce: 'pre',
+        use: ['tslint-loader', 'eslint-loader'],
+      },
+      {
         test: /\.tsx?$/,
         use: ['babel-loader', 'awesome-typescript-loader'],
         exclude: /node_modules/,
