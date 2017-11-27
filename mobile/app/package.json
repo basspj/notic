@@ -58,7 +58,7 @@
   "dependencies": {
     "@mobile/themes": "0.0.1",
     "react": "16.1.1",
-    "react-native": "0.50.3",
+    "react-native": "0.50.4",
     "styled-components": "2.2.3",
     "haul": "1.0.0-beta.10"
   },
@@ -80,7 +80,7 @@
     "tslint-loader": "3.5.3",
     "eslint-loader": "1.9.0",
     "stylelint-custom-processor-loader": "0.4.0",
-    "javascript-obfuscator": "0.12.2",
+    "javascript-obfuscator": "0.12.3",
     "rimraf": "2.6.2"
   },
   "jest": {

@@ -766,7 +766,7 @@ react-transform-hmr@^1.0.4:
   resolved "https://registry.yarnpkg.com/react-transform-hmr/-/react-transform-hmr-1.0.4.tgz#e1a40bd0aaefc72e8dfd7a7cda09af85066397bb"
   dependencies:
     global "^4.3.0"
-    react-proxy "^1.1.7"
+    react-proxy "^3.0.0-alpha.1"
 
 rechoir@^0.6.2:
   version "0.6.2"
@@ -812,9 +812,9 @@ rimraf@2.6.2:
   dependencies:
     glob "^7.0.5"
 
-rollup@0.51.8:
-  version "0.51.8"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.51.8.tgz#58bd0b642885f4770b5f93cc64f14e4233c2236d"
+rollup@0.52.0:
+  version "0.52.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.52.0.tgz#cdb6927f53bf7b7fb09af3a936b9c8ee49b161e2"
 
 shelljs@^0.7.0:
   version "0.7.8"
