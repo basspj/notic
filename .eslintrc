@@ -61,7 +61,9 @@
     "function-paren-newline": 0,
     "no-confusing-arrow": 0,
     "no-underscore-dangle": 0,
-    "no-empty-pattern": 0
+    "no-empty-pattern": 0,
+    "no-param-reassign": 0,
+    "camelcase": 0
   },
   "globals": {
     "__DEV__": false
