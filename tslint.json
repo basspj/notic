@@ -21,6 +21,9 @@
     "no-empty-interface": false,
     "no-empty": false,
     "quotemark": false,
+    "ter-indent": false,
+    "align": false,
+    "object-shorthand-properties-first": false,
 
     //override react
     "jsx-boolean-value": false,
