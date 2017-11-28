@@ -15,8 +15,7 @@ const theme: ITheme = {
 };
 
 const Container = styled.div`
-  background-color: ${(props: IThemeProvider) =>
-    props.theme ? props.theme.bg : 'white'};
+  background-color: ${(props: IThemeProvider) => (props.theme ? props.theme.bg : 'white')};
   text-align: center;
 `;
 
@@ -49,7 +48,7 @@ const App: React.SFC = () => (
   <ThemeProvider theme={theme}>
     <Container>
       <AppHeader>
-        <AppLogo src={logo} alt="logo" />
+        <AppLogo src={logo} alt='logo' />
         <h2>Welcome to React</h2>
       </AppHeader>
       <AppIntro>
