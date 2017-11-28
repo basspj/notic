@@ -124,5 +124,9 @@ React, React Native and more
 
 ### Framework
 
-- [ ] [React](https://github.com/facebook/react)
+- [x] [React](https://github.com/facebook/react)
+
+### Dev Tools
+
+- [x] [Webpack](https://github.com/webpack/webpack)
 
