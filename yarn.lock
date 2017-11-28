@@ -210,6 +210,12 @@
   version "8.0.53"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.53.tgz#396b35af826fa66aad472c8cb7b8d5e277f4e6d8"
 
+"@types/puppeteer@0.13.4":
+  version "0.13.4"
+  resolved "https://registry.yarnpkg.com/@types/puppeteer/-/puppeteer-0.13.4.tgz#69e6edc59b8651c3f80dad0f5a2536d52e9bba97"
+  dependencies:
+    "@types/node" "*"
+
 "@types/react-dom@16.0.3":
   version "16.0.3"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.0.3.tgz#8accad7eabdab4cca3e1a56f5ccb57de2da0ff64"
