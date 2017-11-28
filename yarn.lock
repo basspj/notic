@@ -144,6 +144,12 @@
   dependencies:
     "@types/color-convert" "*"
 
+"@types/connect@*":
+  version "3.4.31"
+  resolved "https://registry.yarnpkg.com/@types/connect/-/connect-3.4.31.tgz#1f92d6b117ecc05076c49ecd024f7976e528bad9"
+  dependencies:
+    "@types/node" "*"
+
 "@types/enzyme@3.1.5":
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/@types/enzyme/-/enzyme-3.1.5.tgz#6cc31d7f7e552209e244a45d89279f4def4aaade"
@@ -151,11 +157,37 @@
     "@types/cheerio" "*"
     "@types/react" "*"
 
+"@types/express-serve-static-core@*":
+  version "4.0.57"
+  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.0.57.tgz#3cd8ab4b11d5ecd70393bada7fc1c480491537dd"
+  dependencies:
+    "@types/node" "*"
+
+"@types/fs-extra@4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-4.0.5.tgz#8aa6033c0e87c653b09a6711686916864b48ec9e"
+  dependencies:
+    "@types/node" "*"
+
 "@types/glob@*":
   version "5.0.33"
   resolved "https://registry.yarnpkg.com/@types/glob/-/glob-5.0.33.tgz#3dff7c6ce09d65abe919c7961dc3dee016f36ad7"
   dependencies:
     "@types/minimatch" "*"
+    "@types/node" "*"
+
+"@types/http-proxy-middleware@*":
+  version "0.17.2"
+  resolved "https://registry.yarnpkg.com/@types/http-proxy-middleware/-/http-proxy-middleware-0.17.2.tgz#78dde05402faa5f09cfe83807a64541022628429"
+  dependencies:
+    "@types/connect" "*"
+    "@types/http-proxy" "*"
+    "@types/node" "*"
+
+"@types/http-proxy@*":
+  version "1.12.2"
+  resolved "https://registry.yarnpkg.com/@types/http-proxy/-/http-proxy-1.12.2.tgz#aef03f2f5bd1230fa1298224f0bc48f239320b09"
+  dependencies:
     "@types/node" "*"
 
 "@types/jest@21.1.8":
@@ -165,6 +197,10 @@
 "@types/lodash@4.14.85":
   version "4.14.85"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.85.tgz#a16fbf942422f6eca5622b6910492c496c35069b"
+
+"@types/mime@*":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.0.tgz#5a7306e367c539b9f6543499de8dd519fac37a8b"
 
 "@types/minimatch@*":
   version "3.0.1"
@@ -197,6 +233,13 @@
   version "16.0.25"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.25.tgz#bf696b83fe480c5e0eff4335ee39ebc95884a1ed"
 
+"@types/serve-static@*":
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/@types/serve-static/-/serve-static-1.13.1.tgz#1d2801fa635d274cd97d4ec07e26b21b44127492"
+  dependencies:
+    "@types/express-serve-static-core" "*"
+    "@types/mime" "*"
+
 "@types/shelljs@0.7.6":
   version "0.7.6"
   resolved "https://registry.yarnpkg.com/@types/shelljs/-/shelljs-0.7.6.tgz#4ac7ca01c191ba65b8e2bf50543c5560084d8d27"
@@ -211,6 +254,12 @@
 "@types/source-map@*":
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/@types/source-map/-/source-map-0.5.2.tgz#973459e744cc7445c85b97f770275b479b138e08"
+
+"@types/spdy@*":
+  version "3.4.4"
+  resolved "https://registry.yarnpkg.com/@types/spdy/-/spdy-3.4.4.tgz#3282fd4ad8c4603aa49f7017dd520a08a345b2bc"
+  dependencies:
+    "@types/node" "*"
 
 "@types/storybook__addon-actions@3.0.1":
   version "3.0.1"
@@ -239,11 +288,21 @@
   dependencies:
     "@types/source-map" "*"
 
+"@types/webpack-dev-server@2.9.2":
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/@types/webpack-dev-server/-/webpack-dev-server-2.9.2.tgz#8df8d34feb7d65b4b16f8b181cb9cd71103ee4d0"
+  dependencies:
+    "@types/express-serve-static-core" "*"
+    "@types/http-proxy-middleware" "*"
+    "@types/serve-static" "*"
+    "@types/spdy" "*"
+    "@types/webpack" "*"
+
 "@types/webpack-env@*":
   version "1.13.2"
   resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.13.2.tgz#c290b99dbef74df21b06671aea36e355bf3b27e1"
 
-"@types/webpack@3.8.1":
+"@types/webpack@*", "@types/webpack@3.8.1":
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-3.8.1.tgz#20c11ea43f1ea7bb09eee4d6d633d830653e5a55"
   dependencies:
