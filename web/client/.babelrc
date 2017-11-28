@@ -1,0 +1,30 @@
+{
+  "presets": ["react"],
+  "sourceMaps": "inline",
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "~": "."
+        }
+      }
+    ]
+  ],
+  "env": {
+    "web": {
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["."],
+            "alias": {
+              "~": "./web/client"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}

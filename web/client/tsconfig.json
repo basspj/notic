@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "module": "esnext",
+    "target": "es5",
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["*"]
+    },
+    "allowJs": true,
+    "noImplicitAny": false,
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ]
+  },
+  "include": ["src", "tests", "scripts", "stories"],
+  "exclude": ["node_modules"]
+}

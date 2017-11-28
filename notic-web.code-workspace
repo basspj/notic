@@ -4,7 +4,10 @@
       "path": "."
     },
     {
-      "path": "web/app"
+      "path": "web/client"
+    },
+    {
+      "path": "web/server"
     }
   ],
   "settings": {

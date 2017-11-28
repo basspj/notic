@@ -1,0 +1,14 @@
+declare module 'react-dev-utils';
+declare module 'react-dev-utils/FileSizeReporter';
+declare module 'react-dev-utils/InterpolateHtmlPlugin';
+declare module 'react-dev-utils/ModuleScopePlugin';
+declare module 'react-dev-utils/WatchMissingNodeModulesPlugin';
+declare module 'react-dev-utils/WebpackDevServerUtils';
+declare module 'react-dev-utils/checkRequiredFiles';
+declare module 'react-dev-utils/clearConsole';
+declare module 'react-dev-utils/errorOverlayMiddleware';
+declare module 'react-dev-utils/formatWebpackMessages';
+declare module 'react-dev-utils/noopServiceWorkerMiddleware';
+declare module 'react-dev-utils/openBrowser';
+declare module 'react-dev-utils/printBuildError';
+declare module 'react-dev-utils/printHostingInstructions';
