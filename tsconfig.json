@@ -17,7 +17,7 @@
     "noResolve": false,
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
-    "noUnusedParameters": true,
+    "noUnusedParameters": false,
     "noUnusedLocals": true,
     "strictNullChecks": true,
     "strict": true,

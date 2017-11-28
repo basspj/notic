@@ -23,10 +23,10 @@
   "setupTestFrameworkScriptFile":
     "<rootDir>/node_modules/jest-enzyme/lib/index.js",
   "testRegex": "/tests/.*.test.(ts|tsx)?$",
-  "testPathIgnorePatterns": ["/node_modules/", "/mobile/.*/dist"],
+  "testPathIgnorePatterns": ["/node_modules/", "/mobile/.*/dist", "web"],
   "collectCoverage": true,
   "coverageReporters": ["json"],
   "coveragePathIgnorePatterns": ["/node_modules/", "/tests/", "/scripts/"],
-  "collectCoverageFrom": ["mobile/**/src/*.ts{,x}"],
+  "coverageDirectory": "coverage/mobile",
   "mapCoverage": true
 }
