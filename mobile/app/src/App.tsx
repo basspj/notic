@@ -29,12 +29,12 @@ const Container = styled(View)`
   align-items: center;
 `;
 
-interface IContainer {
+interface IWelcomeText {
   blue?: boolean;
 }
 
 const WelcomeText = styled(Text)`
-  color: ${(props: IContainer) => (props.blue ? '#1976d2' : '#F5FCFF')};
+  color: ${(props: IWelcomeText) => (props.blue ? '#1976d2' : '#F5FCFF')};
   font-size: ${moderateHorizontalScale(20)};
   text-align: center;
   margin-horizontal: 10;
