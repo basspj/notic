@@ -1,5 +1,12 @@
 language: node_js
 
+dist: trusty
+
+addons:
+  apt:
+    packages:
+      - google-chrome-stable
+
 node_js:
   - "6.9.1"
 
