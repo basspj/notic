@@ -31,7 +31,7 @@ beforeAll(async () => {
     detached: true,
   });
 
-  await wait(5000);
+  await wait(15000);
 });
 
 describe('e2e', () => {
