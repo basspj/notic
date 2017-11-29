@@ -16,6 +16,6 @@
       }
     ]
   },
-  "include": ["src", "tests", "scripts", "stories"],
+  "include": ["src", "stories", "tests", "e2e", "scripts"],
   "exclude": ["node_modules"]
 }
