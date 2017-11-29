@@ -53,5 +53,6 @@
     "chalk": "2.3.0",
     "cross-env": "5.1.1"
   },
+  "license": "MIT",
   "homepage": "https://github.com/basspj/notic#readme"
 }

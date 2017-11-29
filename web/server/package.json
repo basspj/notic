@@ -2,5 +2,6 @@
   "name": "web-server",
   "version": "0.0.1",
   "description": "Web Server",
-  "scripts": {}
+  "scripts": {},
+  "license": "MIT"
 }
