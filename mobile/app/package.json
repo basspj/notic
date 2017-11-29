@@ -26,8 +26,10 @@
     "android-shake":
       "$ANDROID_HOME/platform-tools/adb devices | grep '\\t' | awk '{print $1}' | sed 's/\\s//g' | xargs -I {} $ANDROID_HOME/platform-tools/adb -s {} shell input keyevent 82",
     "android-log": "react-native log-android",
+    "avd-ls": "emulator -list-avds",
     "clean-android": "rimraf android/app/build && rimraf android/build",
     "ios": "yarn start -- --platform ios",
+    "ios-sim": "ios-sim start --devicetypeid 'iPhone-6, 10.3'",
     "ios-rn": "react-native run-ios",
     "ios-log": "react-native log-ios",
     "clean-ios": "rimraf ios/build",
@@ -55,7 +57,7 @@
     "@mobile/themes": "0.0.1",
     "react": "16.2.0",
     "react-native": "0.50.4",
-    "styled-components": "2.2.3",
+    "styled-components": "2.2.4",
     "haul": "1.0.0-beta.10"
   },
   "devDependencies": {
@@ -77,30 +79,12 @@
     "eslint-loader": "1.9.0",
     "stylelint-custom-processor-loader": "0.4.0",
     "javascript-obfuscator": "0.12.3",
-    "rimraf": "2.6.2"
-  },
-  "jest": {
-    "preset": "react-native",
-    "globals": {
-      "ts-jest": {
-        "tsConfigFile": "tsconfig.json",
-        "useBabelrc": true
-      }
-    },
-    "transform": {
-      ".+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
-      ".+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    },
-    "testRegex": "/tests/.*.spec.(js|ts|tsx)?$",
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
-    "moduleDirectories": ["node_modules", "src"],
-    "moduleNameMapper": {
-      "~/(.*)": "<rootDir>/$1"
-    },
-    "setupTestFrameworkScriptFile": "<rootDir>/e2e/setup.ts"
+    "rimraf": "2.6.2",
+    "ios-sim": "6.1.2"
   },
   "detox": {
-    "runner": "jest",
+    "test-runner": "jest",
+    "runner-config": "jest.e2e.json",
     "configurations": {
       "android.emu.debug": {
         "binaryPath": "android/app/build/outputs/apk/app-debug.apk",

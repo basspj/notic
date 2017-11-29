@@ -1,0 +1,20 @@
+{
+  "preset": "react-native",
+  "globals": {
+    "ts-jest": {
+      "tsConfigFile": "tsconfig.json",
+      "useBabelrc": true
+    }
+  },
+  "transform": {
+    ".+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
+    ".+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+  },
+  "testRegex": "/tests/.*.spec.(js|ts|tsx)?$",
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
+  "moduleDirectories": ["node_modules", "src"],
+  "moduleNameMapper": {
+    "~/(.*)": "<rootDir>/$1"
+  },
+  "setupTestFrameworkScriptFile": "<rootDir>/e2e/setup.ts"
+}
