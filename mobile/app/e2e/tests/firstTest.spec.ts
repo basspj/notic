@@ -1,19 +1,12 @@
 import { EnvConfig } from '~/src/config';
 
-import { init } from '../init';
-
 describe('Root', () => {
   beforeEach(async () => {
-    if (typeof device === 'undefined') {
-      await init();
-    }
     await device.reloadReactNative();
   });
 
   test('should have root screen', async () => {
-    await expect(
-      element(by.id(EnvConfig.babel.E2E_TEST_IDS.ROOT)),
-    ).toBeVisible();
+    await expect(element(by.id(EnvConfig.babel.E2E_TEST_IDS.ROOT))).toBeVisible();
   });
 
   // test('should show hello screen after tap', async () => {

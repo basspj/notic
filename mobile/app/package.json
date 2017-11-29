@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "React Native and more",
   "scripts": {
-    "clean":
-      "rimraf $TMPDIR/react-* && yarn cache clean && watchman watch-del-all",
+    "clean": "rimraf $TMPDIR/react-* && yarn cache clean && watchman watch-del-all",
     "e2e-build": "detox build -c ios.sim.debug",
     "e2e-test": "detox test -c ios.sim.debug",
     "e2e": "yarn e2e-build && yarn e2e-test",
@@ -17,14 +16,12 @@
     "link": "react-native link",
     "predist": "rimraf 'dist'",
     "dist": "tsc -p tsconfig.dist.json",
-    "postversion":
-      "node node_modules/react-native-version/cli.js --never-amend",
+    "postversion": "node node_modules/react-native-version/cli.js --never-amend",
     "preandroid": "adb reverse tcp:8081 tcp:8081",
     "android": "yarn start -- --platform android",
     "android-rn": "react-native run-android",
     "android-build": "cd android && ./gradlew assembleRelease --stacktrace",
-    "android-install":
-      "cd android && ./gradlew assembleRelease && ./gradlew installRelease",
+    "android-install": "cd android && ./gradlew assembleRelease && ./gradlew installRelease",
     "android-devices": "$ANDROID_HOME/platform-tools/adb devices",
     "android-shake":
       "$ANDROID_HOME/platform-tools/adb devices | grep '\\t' | awk '{print $1}' | sed 's/\\s//g' | xargs -I {} $ANDROID_HOME/platform-tools/adb -s {} shell input keyevent 82",
@@ -52,8 +49,7 @@
       "javascript-obfuscator bundle/ios/main.jsbundle.js --output bundle/ios/main.jsbundle --compact true --selfDefending true",
     "postobfuscate-android":
       "rimraf 'bundle/android/{index.android.bundle.js,index.android.bundle.js.map}'",
-    "postobfuscate-ios":
-      "rimraf 'bundle/ios/{main.jsbundle.js,main.jsbundle.js.map}'"
+    "postobfuscate-ios": "rimraf 'bundle/ios/{main.jsbundle.js,main.jsbundle.js.map}'"
   },
   "dependencies": {
     "@mobile/themes": "0.0.1",
@@ -101,7 +97,7 @@
     "moduleNameMapper": {
       "~/(.*)": "<rootDir>/$1"
     },
-    "setupTestFrameworkScriptFile": "<rootDir>/e2e/init.ts"
+    "setupTestFrameworkScriptFile": "<rootDir>/e2e/setup.ts"
   },
   "detox": {
     "runner": "jest",
@@ -121,16 +117,14 @@
         "name": "Nexus_5X_API_26"
       },
       "ios.sim.debug": {
-        "binaryPath":
-          "ios/build/Build/Products/Debug-iphonesimulator/notic.app",
+        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/notic.app",
         "build":
           "xcodebuild -project ios/notic.xcodeproj -scheme notic -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
         "type": "ios.simulator",
         "name": "iPhone 6"
       },
       "ios.sim.release": {
-        "binaryPath":
-          "ios/build/Build/Products/Release-iphonesimulator/notic.app",
+        "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/notic.app",
         "build":
           "export RCT_NO_LAUNCH_PACKAGER=true && xcodebuild -project ios/notic.xcodeproj -scheme notic -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
         "type": "ios.simulator",
