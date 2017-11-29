@@ -53,7 +53,7 @@
   },
   "dependencies": {
     "@mobile/themes": "0.0.1",
-    "react": "16.1.1",
+    "react": "16.2.0",
     "react-native": "0.50.4",
     "styled-components": "2.2.3",
     "haul": "1.0.0-beta.10"
@@ -70,7 +70,7 @@
     "react-native-typescript-transformer": "1.1.4",
     "jest": "21.2.1",
     "ts-jest": "21.2.3",
-    "detox": "5.10.0",
+    "detox": "6.0.2",
     "babel-loader": "7.1.2",
     "awesome-typescript-loader": "3.4.0",
     "tslint-loader": "3.5.3",
