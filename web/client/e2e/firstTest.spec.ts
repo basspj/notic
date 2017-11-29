@@ -18,6 +18,7 @@ beforeAll(async () => {
     headless: false,
     slowMo: 80,
     // args: [`--window-size=${width},${height}`],
+    args: ['--no-sandbox'],
   });
 
   page = await browser.newPage();
