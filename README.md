@@ -126,6 +126,10 @@ React, React Native and more
 
 - [x] [React](https://github.com/facebook/react)
 
+### Test
+
+- [x] [Puppeteer](https://github.com/GoogleChrome/puppeteer)
+
 ### Dev Tools
 
 - [x] [Webpack](https://github.com/webpack/webpack)
