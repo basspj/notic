@@ -8,7 +8,7 @@
     "postinstall": "yarn script-postinstall && yarn bootstrap",
     "prebootstrap": "yarn clean-dist",
     "bootstrap": "lerna bootstrap",
-    "pub": "lerna publish --silent --no-skip --conventional-commits",
+    "pub": "lerna publish --silent --skip-npm --conventional-commits",
     "pub-yes": "yarn pub -- --yes",
     "push": "git push --follow-tags",
     "clean": "rimraf $TMPDIR/react-* && yarn cache clean && watchman watch-del-all",
