@@ -10,7 +10,9 @@ React, React Native and more
 
 
 
-## To-Do - Shared
+## Shared
+
+[![Known Vulnerabilities](https://snyk.io/test/github/basspj/notic/badge.svg)](https://snyk.io/test/github/basspj/notic)
 
 ### Design
 
@@ -97,7 +99,11 @@ React, React Native and more
 
 
 
-## To-Do - Mobile
+## Mobile
+
+[![Known Vulnerabilities](https://snyk.io/test/github/basspj/notic/badge.svg?targetFile=mobile%2Fapp%2Fpackage.json)](https://snyk.io/test/github/basspj/notic?targetFile=mobile%2Fapp%2Fpackage.json)
+[![Known Vulnerabilities](https://snyk.io/test/github/basspj/notic/badge.svg?targetFile=mobile%2Fapp%2Fandroid%2Fapp%2Fbuild.gradle)](https://snyk.io/test/github/basspj/notic?targetFile=mobile%2Fapp%2Fandroid%2Fapp%2Fbuild.gradle)
+[![Known Vulnerabilities](https://snyk.io/test/github/basspj/notic/badge.svg?targetFile=mobile%2Fshared-themes%2Fpackage.json)](https://snyk.io/test/github/basspj/notic?targetFile=mobile%2Fshared-themes%2Fpackage.json)
 
 ### Design
 
@@ -122,7 +128,9 @@ React, React Native and more
 
 
 
-## To-Do - Web
+## Web
+
+[![Known Vulnerabilities](https://snyk.io/test/github/basspj/notic/badge.svg?targetFile=web%2Fclient%2Fpackage.json)](https://snyk.io/test/github/basspj/notic?targetFile=web%2Fclient%2Fpackage.json)
 
 ### Framework
 
