@@ -16,7 +16,7 @@
     "link": "react-native link",
     "predist": "rimraf 'dist'",
     "dist": "tsc -p tsconfig.dist.json",
-    "postversion": "node node_modules/react-native-version/cli.js --never-amend",
+    "ver-rn": "node node_modules/react-native-version/cli.js --never-amend",
     "preandroid": "adb reverse tcp:8081 tcp:8081",
     "android": "yarn start -- --platform android",
     "android-rn": "react-native run-android",
