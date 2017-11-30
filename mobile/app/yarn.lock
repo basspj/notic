@@ -7700,17 +7700,17 @@ typedoc@0.9.0:
     typedoc-default-themes "^0.5.0"
     typescript "2.4.1"
 
-typescript-styled-plugin@0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/typescript-styled-plugin/-/typescript-styled-plugin-0.2.1.tgz#ca56aff1cd0b312b11b1b8384d6a06a5fec95e88"
+typescript-styled-plugin@0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/typescript-styled-plugin/-/typescript-styled-plugin-0.2.2.tgz#155b17df98d88b595a1e03cc859a545df840c634"
   dependencies:
-    typescript-template-language-service-decorator "^1.0.1"
+    typescript-template-language-service-decorator "^1.0.3"
     vscode-css-languageservice "^2.1.10"
     vscode-languageserver-types "^3.4.0"
 
-typescript-template-language-service-decorator@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/typescript-template-language-service-decorator/-/typescript-template-language-service-decorator-1.0.1.tgz#1d4cc508887ddeca44b64df0496bd37443efe471"
+typescript-template-language-service-decorator@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/typescript-template-language-service-decorator/-/typescript-template-language-service-decorator-1.0.3.tgz#d3f28393d3dc0b21d4e969feefd8a73af7ca2375"
 
 typescript@2.4.1:
   version "2.4.1"
