@@ -102,7 +102,6 @@ React, React Native and more
 ## Mobile
 
 [![Known Vulnerabilities](https://snyk.io/test/github/basspj/notic/badge.svg?targetFile=mobile%2Fapp%2Fpackage.json)](https://snyk.io/test/github/basspj/notic?targetFile=mobile%2Fapp%2Fpackage.json)
-[![Known Vulnerabilities](https://snyk.io/test/github/basspj/notic/badge.svg?targetFile=mobile%2Fapp%2Fandroid%2Fapp%2Fbuild.gradle)](https://snyk.io/test/github/basspj/notic?targetFile=mobile%2Fapp%2Fandroid%2Fapp%2Fbuild.gradle)
 [![Known Vulnerabilities](https://snyk.io/test/github/basspj/notic/badge.svg?targetFile=mobile%2Fshared-themes%2Fpackage.json)](https://snyk.io/test/github/basspj/notic?targetFile=mobile%2Fshared-themes%2Fpackage.json)
 
 ### Design
