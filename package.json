@@ -8,7 +8,9 @@
     "postinstall": "yarn script-postinstall && yarn bootstrap",
     "prebootstrap": "yarn clean-dist",
     "bootstrap": "lerna bootstrap",
-    "publish": "lerna publish --silent",
+    "pub": "lerna publish --silent --no-skip --conventional-commits",
+    "pub-yes": "yarn pub -- --yes",
+    "push": "git push --follow-tags",
     "clean": "rimraf $TMPDIR/react-* && yarn cache clean && watchman watch-del-all",
     "clean-lock": "rimraf 'yarn.lock' '{mobile,web}/*/yarn.lock'",
     "clean-coverage": "rimraf 'coverage'",
@@ -31,7 +33,6 @@
     "snapshot": "yarn test --updateSnapshot",
     "precommit": "lint-staged",
     "commitmsg": "commitlint -e",
-    "git-add": "git add .",
     "cz": "git-cz",
     "cz-retry": "git-cz --retry"
   },
