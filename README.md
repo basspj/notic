@@ -3,6 +3,7 @@ React, React Native and more
 
 ![Travis CI](https://travis-ci.org/basspj/notic.svg?branch=master)
 [![codecov](https://codecov.io/gh/basspj/notic/branch/master/graph/badge.svg)](https://codecov.io/gh/basspj/notic)
+[![CodeFactor](https://www.codefactor.io/repository/github/basspj/notic/badge)](https://www.codefactor.io/repository/github/basspj/notic)
 [![Dependency Status](https://dependencyci.com/github/basspj/notic/badge)](https://dependencyci.com/github/basspj/notic)
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
