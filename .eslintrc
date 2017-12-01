@@ -63,7 +63,8 @@
     "no-underscore-dangle": 0,
     "no-empty-pattern": 0,
     "no-param-reassign": 0,
-    "camelcase": 0
+    "camelcase": 0,
+    "max-len": ["error", 80]
   },
   "globals": {
     "__DEV__": false
