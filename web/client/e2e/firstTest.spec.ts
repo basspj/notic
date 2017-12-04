@@ -39,7 +39,10 @@ describe('e2e', () => {
     'goto localhost',
     async () => {
       await page.goto('http://localhost:3000/');
-      await page.screenshot({ path: 'screenshot/web/client/iPhone 6.png', fullPage: true });
+      await page.screenshot({
+        path: 'screenshot/web/client/iPhone 6.png',
+        fullPage: true,
+      });
     },
     16000,
   );

@@ -62,9 +62,7 @@ measureFileSizesBeforeBuild(paths.appBuild)
           )} to learn more about each warning.`,
         );
         console.log(
-          `To ignore, add ${chalk.cyan(
-            '// eslint-disable-next-line',
-          )} to the line before.\n`,
+          `To ignore, add ${chalk.cyan('// eslint-disable-next-line')} to the line before.\n`,
         );
       } else {
         console.log(chalk.green('Compiled successfully.\n'));
@@ -83,13 +81,7 @@ measureFileSizesBeforeBuild(paths.appBuild)
       const { publicUrl } = paths;
       const { output: { publicPath } } = config;
       const buildFolder = path.relative(process.cwd(), paths.appBuild);
-      printHostingInstructions(
-        packageJson,
-        publicUrl,
-        publicPath,
-        buildFolder,
-        useYarn,
-      );
+      printHostingInstructions(packageJson, publicUrl, publicPath, buildFolder, useYarn);
     },
     (err: any) => {
       console.log(chalk.red('Failed to compile.\n'));
