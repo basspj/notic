@@ -1,18 +1,11 @@
 {
-  "*.d.ts": [
-    "eslint -c .eslintrc",
-    "prettier-eslint --config .prettierrc --eslint-config-path .eslintrc --parser typescript --write",
-    "git add"
-  ],
+  "*.d.ts": ["eslint -c .eslintrc", "yarn prettier-ts -- --write", "git add"],
   "*.ts{,x}": [
     "tslint -c tslint.json --fix",
     "eslint -c .eslintrc",
     "stylelint -c .stylelintrc",
-    "prettier-eslint --config .prettierrc --eslint-config-path .eslintrc --parser typescript --write",
+    "yarn prettier-ts -- --write",
     "git add"
   ],
-  "{*.json,.*rc}": [
-    "prettier-eslint --config .prettierrc --eslint-config-path .eslintrc --parser json --write",
-    "git add"
-  ]
+  "{*.json,.*rc}": ["yarn prettier-json -- --write", "git add"]
 }
