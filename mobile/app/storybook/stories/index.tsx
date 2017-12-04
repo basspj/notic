@@ -8,9 +8,7 @@ import Button from './Button';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
 
-storiesOf('Welcome', module).add('to Storybook', () => (
-  <Welcome showApp={linkTo('Button')} />
-));
+storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
 storiesOf('Button', module)
   .addDecorator((getStory: any) => <CenterView>{getStory()}</CenterView>)

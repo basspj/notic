@@ -1,0 +1,19 @@
+{
+  "presets": ["react-native"],
+  "sourceMaps": "inline",
+  "env": {
+    "mobile": {
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["."],
+            "alias": {
+              "~": "./mobile/mobile-themes"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}

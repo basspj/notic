@@ -1,9 +1,4 @@
-import {
-  Test as test,
-  Release as release,
-  BabelEnvKeys,
-  IBabelConfig,
-} from './Env';
+import { Test as test, Release as release, BabelEnvKeys, IBabelConfig } from './Env';
 
 import { IBabelEnv } from './type';
 

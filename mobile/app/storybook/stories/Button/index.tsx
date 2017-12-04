@@ -1,22 +1,16 @@
 import React from 'react';
-import {
-  TouchableNativeFeedback,
-  TouchableHighlight,
-  Platform,
-} from 'react-native';
+import { TouchableNativeFeedback, TouchableHighlight, Platform } from 'react-native';
 
-const Touchable =
-  Platform.OS === 'android' ? TouchableNativeFeedback : TouchableHighlight;
+const Touchable = Platform.OS === 'android' ? TouchableNativeFeedback : TouchableHighlight;
 
 export interface IButtonProps {
   children: any;
   onPress: any;
 }
 
-const Button: React.SFC<IButtonProps> = ({
-  onPress,
-  children,
-}: IButtonProps) => <Touchable onPress={onPress}>{children}</Touchable>;
+const Button: React.SFC<IButtonProps> = ({ onPress, children }: IButtonProps) => (
+  <Touchable onPress={onPress}>{children}</Touchable>
+);
 
 Button.defaultProps = {
   children: null,

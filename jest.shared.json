@@ -10,18 +10,18 @@
     ".+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js",
     "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/scripts/jest/transform/fileTransform.js"
   },
-  "modulePathIgnorePatterns": ["web/.*/dist"],
+  "modulePathIgnorePatterns": ["shared/.*/dist"],
   "moduleDirectories": ["node_modules"],
   "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
   "setupTestFrameworkScriptFile": "<rootDir>/node_modules/jest-enzyme/lib/index.js",
   "setupFiles": ["<rootDir>/scripts/jest/shim.ts", "<rootDir>/scripts/jest/setup.ts"],
-  "testRegex": "/(tests|e2e)/.*.(test|spec).(ts|tsx)?$",
-  "testPathIgnorePatterns": ["/node_modules/", "/web/.*/dist", "mobile", "shared"],
+  "testRegex": "/tests/.*.test.(ts|tsx)?$",
+  "testPathIgnorePatterns": ["/node_modules/", "/shared/.*/dist", "mobile", "web"],
   "testEnvironment": "node",
   "testURL": "http://localhost",
   "collectCoverage": true,
   "coverageReporters": ["json"],
   "coveragePathIgnorePatterns": ["/node_modules/", "/tests/", "/scripts/"],
-  "coverageDirectory": "coverage/web",
+  "coverageDirectory": "coverage/shared",
   "mapCoverage": true
 }

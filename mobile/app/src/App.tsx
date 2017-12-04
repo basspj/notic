@@ -6,7 +6,7 @@
 import React from 'react';
 import { Platform, View, Text } from 'react-native';
 import styled, { ThemeProvider } from 'styled-components/native';
-import { moderateHorizontalScale } from '@mobile/themes';
+import { moderateWidthScale } from '@mobile/themes';
 
 import { EnvConfig } from './config';
 
@@ -22,8 +22,7 @@ const theme: ITheme = {
 };
 
 const Container = styled(View)`
-  background-color: ${(props: IThemeProvider) =>
-    props.theme ? props.theme.bg : 'white'};
+  background-color: ${(props: IThemeProvider) => (props.theme ? props.theme.bg : 'white')};
   flex: 1;
   justify-content: center;
   align-items: center;
@@ -35,7 +34,7 @@ interface IWelcomeText {
 
 const WelcomeText = styled(Text)`
   color: ${(props: IWelcomeText) => (props.blue ? '#1976d2' : '#F5FCFF')};
-  font-size: ${moderateHorizontalScale(20)};
+  font-size: ${moderateWidthScale(20)};
   text-align: center;
   margin-horizontal: 10;
   margin-vertical: 10;
@@ -49,8 +48,8 @@ const InstructionText = styled(Text)`
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n Shake or press menu button for dev menu',
+  android: `Double tap R on your keyboard to reload,
+     Shake or press menu button for dev menu`,
 });
 
 export const App = () => (

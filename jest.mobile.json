@@ -10,20 +10,13 @@
     "^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
     ".+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
   },
-  "modulePathIgnorePatterns": [
-    "mobile/.*/dist",
-    "mobile/.*/node_modules/react-native"
-  ],
+  "modulePathIgnorePatterns": ["mobile/.*/dist", "mobile/.*/node_modules/react-native"],
   "moduleDirectories": ["node_modules"],
   "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
-  "setupFiles": [
-    "<rootDir>/scripts/jest/shim.ts",
-    "<rootDir>/scripts/jest/setup.ts"
-  ],
-  "setupTestFrameworkScriptFile":
-    "<rootDir>/node_modules/jest-enzyme/lib/index.js",
+  "setupFiles": ["<rootDir>/scripts/jest/shim.ts", "<rootDir>/scripts/jest/setup.ts"],
+  "setupTestFrameworkScriptFile": "<rootDir>/node_modules/jest-enzyme/lib/index.js",
   "testRegex": "/tests/.*.test.(ts|tsx)?$",
-  "testPathIgnorePatterns": ["/node_modules/", "/mobile/.*/dist", "web"],
+  "testPathIgnorePatterns": ["/node_modules/", "/mobile/.*/dist", "web", "shared"],
   "collectCoverage": true,
   "coverageReporters": ["json"],
   "coveragePathIgnorePatterns": ["/node_modules/", "/tests/", "/scripts/"],
