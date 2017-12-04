@@ -24,7 +24,7 @@
     "ter-indent": false,
     "align": false,
     "object-shorthand-properties-first": false,
-    "max-line-length": [true, 80],
+    "max-line-length": [true, 100],
 
     //override react
     "jsx-boolean-value": false,
