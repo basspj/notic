@@ -6,6 +6,7 @@
 import React from 'react';
 import { Platform, View, Text } from 'react-native';
 import styled, { ThemeProvider } from 'styled-components/native';
+import { Colors } from '@shared/themes';
 import { moderateWidthScale } from '@mobile/themes';
 
 import { EnvConfig } from './config';
@@ -18,7 +19,7 @@ interface ITheme {
 }
 
 const theme: ITheme = {
-  bg: '#795548',
+  bg: Colors.light.bg,
 };
 
 const Container = styled(View)`
