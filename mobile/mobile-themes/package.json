@@ -13,7 +13,7 @@
     "doc": "typedoc --out dist/docs --target es6 --theme minimal src",
     "dist": "rollup -c rollup.config.ts && yarn clean-build && yarn doc",
     "prepublish": "yarn build && yarn dist",
-    "storybook": "storybook start -p 7007"
+    "story": "storybook start -p 7007"
   },
   "peerDependencies": {
     "react": "*",
@@ -27,7 +27,7 @@
     "babel-plugin-module-resolver": "3.0.0",
     "typescript": "2.6.2",
     "typedoc": "0.9.0",
-    "rollup": "0.52.2",
+    "rollup": "0.52.3",
     "rimraf": "2.6.2"
   },
   "license": "MIT"
