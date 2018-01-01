@@ -275,9 +275,9 @@ rimraf@2.6.2:
   dependencies:
     glob "^7.0.5"
 
-rollup@0.52.2:
-  version "0.52.2"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.52.2.tgz#d75bc6f37be02fd27cbb344e57e77b30042bd2cf"
+rollup@0.52.3:
+  version "0.52.3"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.52.3.tgz#020d99fffe9619351e47b3894fd397c26f5e1bf6"
 
 shelljs@^0.7.0:
   version "0.7.8"
