@@ -22,7 +22,6 @@ export default {
   entry: `${outDir}/${index}.js`,
   // Indicate here external modules you don't
   // wanna include in your bundle (i.e.: 'lodash')
-  external: ['color', 'regression'],
   plugins: [
     // Allow bundling cjs modules
     // (unlike webpack, rollup doesn't understand cjs)
