@@ -29,15 +29,16 @@
     "test-web": "BABEL_ENV=web jest -c jest.web.json --no-cache",
     "test-shared": "BABEL_ENV=shared jest -c jest.web.json --no-cache",
     "posttest": "yarn coverage-merge",
-    "coverage-merge":
-      "istanbul-merge --out coverage/coverage-merged.json coverage/mobile/coverage-final.json coverage/web/coverage-final.json",
+    "coverage-merge": "istanbul-merge --out coverage/coverage-merged.json coverage/mobile/coverage-final.json coverage/web/coverage-final.json",
     "postcoverage-merge": "rimraf 'coverage/{mobile,web}' && yarn coverage-report",
     "coverage-report": "codecov -f coverage/*.json",
     "snapshot": "yarn test --updateSnapshot",
     "precommit": "lint-staged",
     "commitmsg": "commitlint -e",
     "cz": "git-cz",
-    "cz-retry": "git-cz --retry"
+    "cz-retry": "git-cz --retry",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "@types/react": "16.0.31",
@@ -140,5 +141,9 @@
   "bugs": {
     "url": "https://github.com/basspj/notic/issues"
   },
-  "homepage": "https://github.com/basspj/notic#readme"
+  "homepage": "https://github.com/basspj/notic#readme",
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.68.1"
+  }
 }
