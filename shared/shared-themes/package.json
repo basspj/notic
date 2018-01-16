@@ -7,13 +7,16 @@
   "typings": "dist/types/index.d.ts",
   "files": ["dist"],
   "scripts": {
-    "clean-build": "rimraf './build'",
-    "prebuild": "yarn clean-build",
+    "clean-build": "rimraf 'build'",
+    "clean-dist": "rimraf 'dist'",
+    "clean-cache": "rimraf '.rpt2_cache'",
+    "prebuild": "yarn clean-build && yarn clean-dist",
     "build": "tsc -p tsconfig.json",
     "doc": "typedoc --out dist/docs --target es6 --theme minimal src",
-    "dist": "rollup -c rollup.config.ts && yarn clean-build && yarn doc",
-    "prepublish": "yarn build && yarn dist",
-    "story": "storybook start -p 7007"
+    "predist": "yarn build",
+    "dist": "rollup -c rollup.config.ts",
+    "postdist": "yarn clean-build && yarn clean-cache && yarn doc",
+    "prepublish": "yarn dist"
   },
   "dependencies": {
     "color": "2.0.1",
