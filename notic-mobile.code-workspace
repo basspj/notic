@@ -7,7 +7,13 @@
       "path": "mobile/app"
     },
     {
-      "path": "mobile/shared-themes"
+      "path": "mobile/home"
+    },
+    {
+      "path": "mobile/mobile-themes"
+    },
+    {
+      "path": "mobile/mobile-config"
     }
   ],
   "settings": {
@@ -17,72 +23,19 @@
     "eslint.enable": true,
     "eslint.packageManager": "npm",
     "eslint.run": "onType",
-    "eslint.validate": [
-      "typescript",
-      "typescriptreact"
-    ],
+    "eslint.validate": ["typescript", "typescriptreact"],
     "eslint.options": {
-      "extensions": [
-        ".js",
-        ".jsx",
-        ".ts",
-        ".tsx"
-      ]
+      "extensions": [".js", ".jsx", ".ts", ".tsx"]
     },
     "stylelint.enable": true,
     "editor.formatOnSave": true,
-    "prettier.typescriptEnable": [
-      "typescript",
-      "typescriptreact"
-    ],
-    "prettier.jsonEnable": [
-      "json"
-    ],
-    "prettier.javascriptEnable": [
-      "javascript",
-      "javascriptreact"
-    ],
+    "prettier.typescriptEnable": ["typescript", "typescriptreact"],
+    "prettier.jsonEnable": ["json"],
+    "prettier.javascriptEnable": ["javascript", "javascriptreact"],
     "prettier.eslintIntegration": true,
     "autofold.default": 0,
     "files.associations": {
       ".*rc": "jsonc"
     }
-  },
-  "extensions": {
-    "recommendations": [
-      "Anjali.clipboard-history",
-      "CoenraadS.bracket-pair-colorizer",
-      "DSKWRK.vscode-generate-getter-setter",
-      "DavidAnson.vscode-markdownlint",
-      "EditorConfig.EditorConfig",
-      "IBM.output-colorizer",
-      "KnisterPeter.vscode-commitizen",
-      "Orta.vscode-jest",
-      "PKief.material-icon-theme",
-      "Shan.code-settings-sync",
-      "alefragnani.Bookmarks",
-      "alefragnani.project-manager",
-      "anseki.vscode-color",
-      "christian-kohler.npm-intellisense",
-      "christian-kohler.path-intellisense",
-      "eamodio.gitlens",
-      "eg2.tslint",
-      "esbenp.prettier-vscode",
-      "formulahendry.auto-close-tag",
-      "formulahendry.auto-rename-tag",
-      "hnw.vscode-auto-open-markdown-preview",
-      "infeng.vscode-react-typescript",
-      "msjsdiag.debugger-for-chrome",
-      "naumovs.color-highlight",
-      "pflannery.vscode-versionlens",
-      "rbbit.typescript-hero",
-      "ryu1kn.partial-diff",
-      "shinnn.stylelint",
-      "steoates.autoimport",
-      "streetsidesoftware.code-spell-checker",
-      "vsmobile.vscode-react-native",
-      "wayou.vscode-todo-highlight",
-      "xabikos.ReactSnippets"
-    ]
   }
 }
