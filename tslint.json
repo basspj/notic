@@ -28,6 +28,7 @@
 
     //override react
     "jsx-boolean-value": false,
+    "jsx-no-multiline-js": false,
 
     //override airbnb
     "import-name": false,
