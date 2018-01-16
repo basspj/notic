@@ -1,1 +1,22 @@
-{}
+{
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "tslint.enable": true,
+  "tslint.jsEnable": false,
+  "eslint.enable": true,
+  "eslint.packageManager": "npm",
+  "eslint.run": "onType",
+  "eslint.validate": ["typescript", "typescriptreact"],
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".ts", ".tsx"]
+  },
+  "stylelint.enable": true,
+  "editor.formatOnSave": true,
+  "prettier.typescriptEnable": ["typescript", "typescriptreact"],
+  "prettier.jsonEnable": ["json"],
+  "prettier.javascriptEnable": ["javascript", "javascriptreact"],
+  "prettier.eslintIntegration": true,
+  "autofold.default": 0,
+  "files.associations": {
+    ".*rc": "jsonc"
+  }
+}
