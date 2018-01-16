@@ -47,6 +47,7 @@
 
     // for convenient
     "jsx-a11y/accessible-emoji": 0,
+    "jsx-a11y/anchor-is-valid": 0,
 
     // override
     "import/extensions": 0,
