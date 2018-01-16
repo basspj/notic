@@ -22,7 +22,12 @@
     "strictNullChecks": true,
     "strict": true,
     "newLine": "LF",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ]
   },
   "compileOnSave": false
 }
