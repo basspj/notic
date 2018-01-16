@@ -15,7 +15,7 @@
   "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
   "setupTestFrameworkScriptFile": "<rootDir>/node_modules/jest-enzyme/lib/index.js",
   "setupFiles": ["<rootDir>/scripts/jest/shim.ts", "<rootDir>/scripts/jest/setup.ts"],
-  "testRegex": "/tests/.*.test.(ts|tsx)?$",
+  "testRegex": "/tests/.*.test.tsx?$",
   "testPathIgnorePatterns": ["/node_modules/", "/shared/.*/dist", "mobile", "web"],
   "testEnvironment": "node",
   "testURL": "http://localhost",
