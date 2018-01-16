@@ -98,6 +98,7 @@ React, React Native and more
 
 * [x] [TypeDoc](https://github.com/TypeStrong/typedoc)
 
+
 ## Mobile
 
 [![Known Vulnerabilities](https://snyk.io/test/github/basspj/notic/badge.svg?targetFile=mobile%2Fapp%2Fpackage.json)](https://snyk.io/test/github/basspj/notic?targetFile=mobile%2Fapp%2Fpackage.json)
@@ -124,6 +125,7 @@ React, React Native and more
 
 * [x] [Haul](https://github.com/callstack/haul)
 
+
 ## Web
 
 [![Known Vulnerabilities](https://snyk.io/test/github/basspj/notic/badge.svg?targetFile=web%2Fclient%2Fpackage.json)](https://snyk.io/test/github/basspj/notic?targetFile=web%2Fclient%2Fpackage.json)
@@ -132,6 +134,10 @@ React, React Native and more
 
 * [x] [React](https://github.com/facebook/react)
 
+### Static
+
+* [ ] [Hypernova](https://github.com/airbnb/hypernova)
+
 ### Test
 
 * [x] [Puppeteer](https://github.com/GoogleChrome/puppeteer)
@@ -139,3 +145,15 @@ React, React Native and more
 ### Dev Tools
 
 * [x] [Webpack](https://github.com/webpack/webpack)
+
+## Service
+
+### Design
+
+* [ ] Micro-service
+
+### Framework
+
+* [ ] [Express](https://github.com/expressjs/express)
+* [ ] [Eureka](https://github.com/Netflix/eureka)
+* [ ] [Zuul](https://github.com/Netflix/zuul)
