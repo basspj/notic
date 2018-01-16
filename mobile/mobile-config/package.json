@@ -1,0 +1,28 @@
+{
+  "name": "@mobile/config",
+  "version": "0.0.1",
+  "description": "Mobile - Config",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es5.js",
+  "typings": "dist/types/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "clean-build": "rimraf 'build'",
+    "clean-dist": "rimraf 'dist'",
+    "clean-cache": "rimraf '.rpt2_cache'",
+    "prebuild": "yarn clean-build && yarn clean-dist",
+    "build": "tsc -p tsconfig.json",
+    "doc": "typedoc --out dist/docs --target es6 --theme minimal src",
+    "predist": "yarn build",
+    "dist": "rollup -c rollup.config.ts",
+    "postdist": "yarn clean-build && yarn clean-cache && yarn doc",
+    "prepublish": "yarn dist"
+  },
+  "devDependencies": {
+    "typescript": "2.6.2",
+    "typedoc": "0.9.0",
+    "rollup": "0.52.3",
+    "rimraf": "2.6.2"
+  },
+  "license": "MIT"
+}

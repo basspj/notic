@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "target": "es6",
+    "jsx": "react-native",
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["*"]
+    },
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "outDir": "build",
+    "noEmit": false
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

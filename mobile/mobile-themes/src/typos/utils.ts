@@ -1,6 +1,6 @@
 import { PixelRatio } from 'react-native';
 
-export const sp = (size: number) => PixelRatio.getFontScale() * size;
+const sp = (size: number) => PixelRatio.getFontScale() * size;
 
 // TODO: auto fit based on layout height, layout width, fontSize, textLength
 
@@ -16,8 +16,8 @@ export const sp = (size: number) => PixelRatio.getFontScale() * size;
 //   textLength;
 // };
 
-export const Utils = {
+export const TypoUtils = {
   sp,
 };
 
-export default Utils;
+export default TypoUtils;

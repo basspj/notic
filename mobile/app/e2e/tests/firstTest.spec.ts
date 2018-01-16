@@ -1,4 +1,4 @@
-import { EnvConfig } from '~/src/config';
+import { EnvConfig } from '@mobile/config';
 
 describe('Root', () => {
   beforeEach(async () => {

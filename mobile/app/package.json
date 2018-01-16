@@ -1,5 +1,5 @@
 {
-  "name": "mobile-app",
+  "name": "@mobile/app",
   "version": "0.0.1",
   "description": "React Native and more",
   "scripts": {
@@ -13,13 +13,14 @@
     "story-all": "yarn storybook -- --platform all",
     "story-reset": "yarn storybook -- --reset-cache",
     "start": "haul start --config webpack.haul.js --dev true --minify false",
-    "link": "react-native link",
-    "predist": "shx rm -rf 'dist'",
-    "dist": "tsc -p tsconfig.dist.json",
-    "ver-rn": "node node_modules/react-native-version/cli.js --never-amend",
+    "rn-start": "react-native start -- --reset-cache",
+    "rn-link": "react-native link",
+    "prern-android": "yarn preandroid",
+    "rn-android": "react-native run-android",
+    "rn-ios": "react-native run-ios",
+    "rn-ver": "node node_modules/react-native-version/cli.js --never-amend",
     "preandroid": "adb reverse tcp:8081 tcp:8081",
     "android": "yarn start -- --platform android",
-    "android-rn": "react-native run-android",
     "android-build": "cd android && ./gradlew assembleRelease --stacktrace",
     "android-build-debug": "cd android && ./gradlew assembleDebug --stacktrace",
     "android-install": "cd android ./gradlew installRelease",
@@ -33,7 +34,6 @@
     "ios": "yarn start -- --platform ios",
     "ios-emu": "ios-sim start --devicetypeid 'iPhone-6, 11.0'",
     "ios-emu-ls": "ios-sim showdevicetypes",
-    "ios-rn": "react-native run-ios",
     "ios-log": "react-native log-ios",
     "clean-ios": "shx rm -rf ios/build",
     "clean-native": "yarn clean-android && yarn clean-ios",
@@ -54,8 +54,9 @@
     "ios-release": "yarn bundle-ios && yarn bundle-ios-apply"
   },
   "dependencies": {
-    "@shared/themes": "0.0.1",
     "@mobile/themes": "0.0.1",
+    "@mobile/config": "0.0.1",
+    "@mobile/home": "0.0.1",
     "react": "16.2.0",
     "react-native": "0.51.0",
     "styled-components": "2.3.3",
@@ -65,20 +66,11 @@
     "@storybook/react-native": "3.2.18",
     "@storybook/addon-actions": "3.2.18",
     "@storybook/addon-links": "3.2.18",
-    "babel-preset-react-native": "4.0.0",
-    "babel-plugin-module-resolver": "3.0.0",
     "typescript": "2.6.2",
-    "typescript-styled-plugin": "0.2.2",
     "typedoc": "0.9.0",
-    "react-native-typescript-transformer": "1.1.4",
     "jest": "22.0.3",
     "ts-jest": "22.0.0",
     "detox": "6.0.4",
-    "babel-loader": "7.1.2",
-    "awesome-typescript-loader": "3.4.1",
-    "tslint-loader": "3.5.3",
-    "eslint-loader": "1.9.0",
-    "stylelint-custom-processor-loader": "0.4.0",
     "shx": "0.2.2",
     "ios-sim": "6.1.2"
   },
@@ -115,6 +107,9 @@
         "name": "iPhone 6"
       }
     }
+  },
+  "rnpm": {
+    "assets": ["./assets/fonts/"]
   },
   "license": "MIT"
 }

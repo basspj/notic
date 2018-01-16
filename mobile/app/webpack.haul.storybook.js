@@ -19,13 +19,22 @@ const config = ({ platform }, { module, resolve }) => ({
     ...module,
     rules: [
       {
-        test: /\.(ts|tsx)$/,
+        test: /\.tsx?$/,
         enforce: 'pre',
         use: ['tslint-loader', 'eslint-loader', 'stylelint-custom-processor-loader'],
       },
       {
         test: /\.tsx?$/,
-        use: ['babel-loader', 'awesome-typescript-loader'],
+        loader: 'awesome-typescript-loader',
+        query: {
+          useBabel: true,
+        },
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.jsx?$/,
+        enforce: 'pre',
+        use: ['source-map-loader', 'babel-loader'],
         exclude: /node_modules/,
       },
       ...module.rules,

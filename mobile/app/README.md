@@ -5,6 +5,7 @@
 #### Using
 
 * [ ] Offline-Using
+* [ ] Standalone - Fetch Without Notic Server
 
 #### Fetch API
 
@@ -19,3 +20,7 @@
 
 * [ ] Battery Saver Mode
 * [ ] Chatbot
+
+### Note
+
+* config yarn.lock to use 'react-proxy' v3 only
