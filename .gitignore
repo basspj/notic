@@ -63,3 +63,6 @@ bundle
 
 #lerna
 lerna-debug.log
+
+#rollup-plugin-typescript2
+.rpt2_cache
