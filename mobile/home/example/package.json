@@ -61,7 +61,6 @@
     "tslint-loader": "3.5.3",
     "eslint-loader": "1.9.0",
     "stylelint-custom-processor-loader": "0.4.0",
-    "tsconfig-paths-webpack-plugin": "1.4.0",
     "ios-sim": "6.1.2",
     "shx": "0.2.2"
   },

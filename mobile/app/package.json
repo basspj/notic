@@ -4,6 +4,9 @@
   "description": "React Native and more",
   "scripts": {
     "clean": "shx rm -rf $TMPDIR/react-* && yarn cache clean && watchman watch-del-all",
+    "clean-coverage": "rimraf 'coverage'",
+    "pretest": "yarn clean-coverage",
+    "test": "jest -c jest.json --no-cache",
     "e2e-build": "detox build -c ios.sim.debug",
     "e2e-test": "detox test -c ios.sim.debug",
     "e2e": "yarn e2e-build && yarn e2e-test",

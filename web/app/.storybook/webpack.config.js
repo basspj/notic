@@ -10,8 +10,8 @@ const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeM
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const postCssFlexBugFixes = require('postcss-flexbugs-fixes');
 
-const getClientEnvironment = require('./env');
-const paths = require('./paths');
+const getClientEnvironment = require('../webpack/env');
+const paths = require('../webpack/paths');
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
@@ -35,7 +35,7 @@ module.exports = {
   // The first two entry points enable "hot" CSS and auto-refreshes for JS.
   entry: [
     // We ship a few polyfills by default:
-    require.resolve('./polyfills'),
+    require.resolve('../webpack/polyfills'),
     // Include an alternative client for WebpackDevServer. A client's job is to
     // connect to WebpackDevServer by a socket and get notified about changes.
     // When you save a file, the client will either apply hot updates (in case
@@ -48,7 +48,7 @@ module.exports = {
     // require.resolve('webpack/hot/dev-server'),
     'react-dev-utils/webpackHotDevClient',
     // Finally, this is your app's code:
-    paths.appIndexJs,
+    paths.storiesIndexJs,
     // We include the app code last so that if there is a runtime error during
     // initialization, it doesn't blow up the WebpackDevServer client, and
     // changing JS code would still trigger a refresh.
@@ -110,7 +110,7 @@ module.exports = {
       // To fix this, we prevent you from importing files out of src/ -- if you'd like to,
       // please link the files into your node_modules/ and let module-resolution kick in.
       // Make sure your source files are compiled, as they will not be processed in any way.
-      // new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
+      new ModuleScopePlugin(paths.storiesSrc, [paths.appPackageJson]),
     ],
   },
   module: {
@@ -123,17 +123,17 @@ module.exports = {
       // First, run the linter.
       // It's important to do this before Babel processes the JS.
       {
-        test: /\.(ts|tsx)$/,
+        test: /\.tsx?$/,
         // loader: 'tslint-loader'),
         enforce: 'pre',
-        include: paths.appSrc,
+        include: paths.storiesSrc,
         use: ['tslint-loader', 'eslint-loader'],
       },
       {
         test: /\.js$/,
         loader: 'source-map-loader',
         enforce: 'pre',
-        include: paths.appSrc,
+        include: paths.storiesSrc,
       },
       {
         // "oneOf" will traverse all following loaders until one will
@@ -154,9 +154,20 @@ module.exports = {
           },
           // Compile .tsx?
           {
-            test: /\.(ts|tsx)$/,
-            include: paths.appSrc,
-            use: ['babel-loader', 'awesome-typescript-loader'],
+            test: /\.tsx?$/,
+            loader: 'awesome-typescript-loader',
+            query: {
+              useBabel: true,
+            },
+            include: paths.storiesSrc,
+            exclude: /node_modules/,
+          },
+          {
+            test: /\.jsx?$/,
+            enforce: 'pre',
+            include: paths.storiesSrc,
+            use: ['source-map-loader', 'babel-loader'],
+            exclude: /node_modules/,
           },
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.
@@ -224,10 +235,10 @@ module.exports = {
     // In development, this will be an empty string.
     new InterpolateHtmlPlugin(env.raw),
     // Generates an `index.html` file with the <script> injected.
-    new HtmlWebpackPlugin({
-      inject: true,
-      template: paths.appHtml,
-    }),
+    // new HtmlWebpackPlugin({
+    //   inject: true,
+    //   template: paths.appHtml,
+    // }),
     // Add module names to factory functions so they appear in browser profiler.
     new webpack.NamedModulesPlugin(),
     // Makes some environment variables available to the JS code, for example:

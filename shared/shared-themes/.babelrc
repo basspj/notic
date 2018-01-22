@@ -1,5 +1,16 @@
 {
   "sourceMaps": "inline",
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "~": "."
+        }
+      }
+    ]
+  ],
   "env": {
     "shared": {
       "plugins": [
