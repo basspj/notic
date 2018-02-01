@@ -11,20 +11,5 @@
         }
       }
     ]
-  ],
-  "env": {
-    "mobile": {
-      "plugins": [
-        [
-          "module-resolver",
-          {
-            "root": ["."],
-            "alias": {
-              "~": "./mobile/home"
-            }
-          }
-        ]
-      ]
-    }
-  }
+  ]
 }

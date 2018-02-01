@@ -11,20 +11,5 @@
         }
       }
     ]
-  ],
-  "env": {
-    "web": {
-      "plugins": [
-        [
-          "module-resolver",
-          {
-            "root": ["."],
-            "alias": {
-              "~": "./web/app"
-            }
-          }
-        ]
-      ]
-    }
-  }
+  ]
 }
