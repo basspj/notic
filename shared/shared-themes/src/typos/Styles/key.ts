@@ -31,11 +31,11 @@ export const StyleKeys: IStyleKeys = {
   button: 'button' as 'button',
 };
 
-export type TStyleKeys = keyof typeof StyleKeys;
+export type TStyleKeys = keyof IStyleKeys;
 
 export const LineHeightKeys: ILineHeightKeys = {
   type: 'type' as 'type',
   leading: 'leading' as 'leading',
 };
 
-export type TLineHeightKeys = keyof typeof LineHeightKeys;
+export type TLineHeightKeys = keyof ILineHeightKeys;

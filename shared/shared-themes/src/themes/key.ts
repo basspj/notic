@@ -9,4 +9,4 @@ export const ThemeKeys: IThemeKeys = {
 };
 
 export const ThemeKeysObjectKeys = Object.keys(ThemeKeys);
-export type TThemeKeys = keyof typeof ThemeKeys;
+export type TThemeKeys = keyof IThemeKeys;

@@ -11,4 +11,4 @@ export const LanguageCategoryKeys: ILanguageCategoryKeys = {
 };
 
 export const LanguageCategoryKeysObjectKey = Object.keys(LanguageCategoryKeys);
-export type TLanguageCategoryKeys = keyof typeof LanguageCategoryKeys;
+export type TLanguageCategoryKeys = keyof ILanguageCategoryKeys;
