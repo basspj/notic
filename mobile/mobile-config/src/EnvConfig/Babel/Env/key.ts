@@ -9,4 +9,4 @@ export const BabelEnvKeys: IBabelEnvKeys = {
 };
 
 export const BabelEnvKeysObjectKeys = Object.keys(BabelEnvKeys);
-export type TBabelEnvKeys = keyof typeof BabelEnvKeys;
+export type TBabelEnvKeys = keyof IBabelEnvKeys;

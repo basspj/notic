@@ -125,7 +125,7 @@ module.exports = {
       // First, run the linter.
       // It's important to do this before Typescript runs.
       {
-        test: /\.(ts|tsx)$/,
+        test: /\.tsx?$/,
         enforce: 'pre',
         include: paths.appSrc,
         use: ['tslint-loader', 'eslint-loader'],
@@ -154,9 +154,20 @@ module.exports = {
           },
           // Compile .tsx?
           {
-            test: /\.(ts|tsx)$/,
+            test: /\.tsx?$/,
+            loader: 'awesome-typescript-loader',
+            query: {
+              useBabel: true,
+            },
             include: paths.appSrc,
-            use: ['babel-loader', 'awesome-typescript-loader'],
+            exclude: /node_modules/,
+          },
+          {
+            test: /\.jsx?$/,
+            enforce: 'pre',
+            include: paths.appSrc,
+            use: ['source-map-loader', 'babel-loader'],
+            exclude: /node_modules/,
           },
           // The notation here is somewhat confusing.
           // "postcss" loader applies autoprefixer to our CSS.

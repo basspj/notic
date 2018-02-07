@@ -145,4 +145,4 @@ export const LocaleKeys: ILocaleKeys = {
 };
 
 export const LocaleKeysObjectKeys = Object.keys(LocaleKeys);
-export type TLocaleKeys = keyof typeof LocaleKeys;
+export type TLocaleKeys = keyof ILocaleKeys;

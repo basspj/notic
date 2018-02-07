@@ -8,13 +8,12 @@
   "transform": {
     "^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
     ".+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js",
-    "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/scripts/jest/transform/fileTransform.js"
+    "^(?!.*\\.(js|jsx|css|json)$)": "../../scripts/jest/transform/fileTransform.js"
   },
-  "modulePathIgnorePatterns": ["web/.*/dist"],
-  "moduleDirectories": ["node_modules"],
+  "modulePathIgnorePatterns": ["dist"],
   "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
-  "setupTestFrameworkScriptFile": "<rootDir>/node_modules/jest-enzyme/lib/index.js",
-  "setupFiles": ["<rootDir>/scripts/jest/shim.ts", "<rootDir>/scripts/jest/setup.ts"],
+  "setupFiles": ["../../scripts/jest/shim.ts", "../../scripts/jest/setup.ts"],
+  "setupTestFrameworkScriptFile": "../../node_modules/jest-enzyme/lib/index.js",
   "testRegex": "/(tests|e2e)/.*.(test|spec).tsx?$",
   "testPathIgnorePatterns": ["/node_modules/", "/web/.*/dist", "mobile", "shared"],
   "testEnvironment": "node",
@@ -22,6 +21,6 @@
   "collectCoverage": true,
   "coverageReporters": ["json"],
   "coveragePathIgnorePatterns": ["/node_modules/", "/tests/", "/scripts/"],
-  "coverageDirectory": "coverage/web",
+  "coverageDirectory": "coverage",
   "mapCoverage": true
 }

@@ -1,18 +1,14 @@
 {
   "sourceMaps": "inline",
-  "env": {
-    "shared": {
-      "plugins": [
-        [
-          "module-resolver",
-          {
-            "root": ["."],
-            "alias": {
-              "~": "./shared/shared-themes"
-            }
-          }
-        ]
-      ]
-    }
-  }
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "~": "."
+        }
+      }
+    ]
+  ]
 }

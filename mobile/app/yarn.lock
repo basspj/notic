@@ -6039,7 +6039,7 @@ react-transform-hmr@^1.0.4:
   resolved "https://registry.yarnpkg.com/react-transform-hmr/-/react-transform-hmr-1.0.4.tgz#e1a40bd0aaefc72e8dfd7a7cda09af85066397bb"
   dependencies:
     global "^4.3.0"
-    react-proxy "^1.1.7"
+    react-proxy "^3.0.0-alpha.0"
 
 react-transition-group@^1.1.2:
   version "1.2.1"

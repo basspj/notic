@@ -1,7 +1,7 @@
-import { Dark } from '~/src/colors';
+import { Colors } from '~/src/colors';
 
 describe('Themes', () => {
   test('Theme Dark exists', () => {
-    expect(Dark).not.toBeNull();
+    expect(Colors.dark).not.toBeNull();
   });
 });

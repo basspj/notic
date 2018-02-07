@@ -1,19 +1,15 @@
 {
   "presets": ["es2015", "react-native"],
   "sourceMaps": "inline",
-  "env": {
-    "mobile": {
-      "plugins": [
-        [
-          "module-resolver",
-          {
-            "root": ["."],
-            "alias": {
-              "~": "./mobile/home"
-            }
-          }
-        ]
-      ]
-    }
-  }
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "~": "."
+        }
+      }
+    ]
+  ]
 }
