@@ -32,24 +32,20 @@
     "formulahendry.auto-close-tag",
     "formulahendry.auto-rename-tag",
     "hnw.vscode-auto-open-markdown-preview",
-    "infeng.vscode-react-typescript",
     "jasonnutter.search-node-modules",
     "joelday.docthis",
     "jpoissonnier.vscode-styled-components",
-    "k--kato.intellij-idea-keybindings",
     "miclo.sort-typescript-imports",
     "msjsdiag.debugger-for-chrome",
     "naumovs.color-highlight",
     "pflannery.vscode-versionlens",
-    "rbbit.typescript-hero",
     "richie5um2.vscode-sort-json",
     "ryu1kn.partial-diff",
     "shinnn.stylelint",
-    "steoates.autoimport",
     "stevencl.addDocComments",
     "streetsidesoftware.code-spell-checker",
     "vsmobile.vscode-react-native",
     "wayou.vscode-todo-highlight",
-    "xabikos.ReactSnippets"
+    "nikitaKunevich.snippet-creator"
   ]
 }
