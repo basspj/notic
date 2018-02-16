@@ -16,8 +16,9 @@
     "build": "tsc -p tsconfig.dist.json",
     "doc": "typedoc --out dist/docs --target es6 --theme minimal src",
     "predist": "yarn build",
-    "dist":
-      "babel build -d dist/es5 && babel build -d dist/umd --plugins transform-es2015-modules-umd",
+    "dist-es5": "BABEL_ENV=es5 babel build -d dist/es5",
+    "dist-umd": "BABEL_ENV=umd babel build -d dist/umd --plugins transform-es2015-modules-umd",
+    "dist": "yarn dist-es5 && yarn dist-umd",
     "postdist": "yarn clean-build && yarn doc",
     "prepublish": "yarn dist"
   },
