@@ -1,6 +1,17 @@
 {
   "presets": ["es2015", "react-native"],
   "sourceMaps": "inline",
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "~": "."
+        }
+      }
+    ]
+  ],
   "env": {
     "es5": {
       "plugins": [
