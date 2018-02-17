@@ -36,7 +36,10 @@
     "cz": "git-cz",
     "cz-retry": "git-cz --retry",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "yarn snyk-protect"
+  },
+  "dependencies": {
+    "snyk": "1.69.7"
   },
   "devDependencies": {
     "@types/react": "16.0.38",
@@ -142,8 +145,5 @@
     "url": "https://github.com/basspj/notic/issues"
   },
   "homepage": "https://github.com/basspj/notic#readme",
-  "snyk": true,
-  "dependencies": {
-    "snyk": "^1.68.1"
-  }
+  "snyk": true
 }
