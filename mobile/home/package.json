@@ -29,17 +29,17 @@
   "dependencies": {
     "@mobile/themes": "0.0.1",
     "@mobile/config": "0.0.1",
-    "styled-components": "2.4.0"
+    "styled-components": "3.1.6"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
     "babel-cli": "6.26.0",
     "react": "16.2.0",
-    "react-native": "0.51.0",
-    "typescript": "2.6.2",
-    "typedoc": "0.9.0",
-    "jest": "22.0.3",
-    "ts-jest": "22.0.0",
+    "react-native": "0.53.0",
+    "typescript": "2.7.2",
+    "typedoc": "0.10.0",
+    "jest": "22.3.0",
+    "ts-jest": "22.0.4",
     "rimraf": "2.6.2"
   },
   "license": "MIT"
