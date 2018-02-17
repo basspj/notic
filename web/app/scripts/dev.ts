@@ -10,7 +10,7 @@ process.on('unhandledRejection', (err: any) => {
 });
 
 // Ensure environment variables are read.
-import '~/webpack/env';
+import '~/config/env';
 
 import chalk from 'chalk';
 import * as fs from 'fs';
@@ -26,9 +26,9 @@ import {
 } from 'react-dev-utils/WebpackDevServerUtils';
 import * as openBrowser from 'react-dev-utils/openBrowser';
 
-import * as paths from '~/webpack/paths';
-import * as config from '~/webpack/webpack.config.dev';
-import * as createDevServerConfig from '~/webpack/webpackDevServer.config';
+import * as paths from '~/config/paths';
+import * as config from '~/config/webpack.config.dev';
+import * as createDevServerConfig from '~/config/webpackDevServer.config';
 import * as packageJson from '~/package.json';
 
 const useYarn = fs.existsSync(paths.yarnLockFile);

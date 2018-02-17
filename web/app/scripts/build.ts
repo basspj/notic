@@ -10,7 +10,7 @@ process.on('unhandledRejection', (err: any) => {
 });
 
 // Ensure environment variables are read.
-import '~/webpack/env';
+import '~/config/env';
 
 import * as path from 'path';
 import chalk from 'chalk';
@@ -22,8 +22,8 @@ import * as printHostingInstructions from 'react-dev-utils/printHostingInstructi
 import * as FileSizeReporter from 'react-dev-utils/FileSizeReporter';
 import * as printBuildError from 'react-dev-utils/printBuildError';
 
-import * as config from '~/webpack/webpack.config.prod';
-import * as paths from '~/webpack/paths';
+import * as config from '~/config/webpack.config.prod';
+import * as paths from '~/config/paths';
 import * as packageJson from '~/package.json';
 
 const { measureFileSizesBeforeBuild } = FileSizeReporter;
