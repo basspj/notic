@@ -1,5 +1,13 @@
 {
   "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "#/*": ["*"],
+      "~/*": ["../*"]
+    }
+  },
+  "include": ["storybook"],
   "files": ["index.tsx"],
   "exclude": ["node_modules"]
 }

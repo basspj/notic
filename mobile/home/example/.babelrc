@@ -1,4 +1,17 @@
 {
   "presets": ["react-native"],
-  "sourceMaps": "inline"
+  "sourceMaps": "inline",
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "#": ".",
+          "~": "..",
+          "@mobile/home": "../src"
+        }
+      }
+    ]
+  ]
 }
