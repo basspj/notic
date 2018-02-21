@@ -34,6 +34,7 @@
     "tsconfig-paths": "3.1.1",
     "typedoc": "0.10.0",
     "jest": "22.4.0",
+    "babel-jest": "22.4.0",
     "ts-jest": "22.0.4",
     "rollup": "0.56.2",
     "chalk": "2.3.1",
