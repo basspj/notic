@@ -12,6 +12,7 @@
     "clean-cache": "rimraf '.rpt2_cache'",
     "prebuild": "yarn clean-build && yarn clean-dist",
     "build": "tsc -p tsconfig.json",
+    "postbuild": "ts-node --project scripts/posttsc/tsconfig.json scripts/posttsc",
     "doc": "typedoc --out dist/docs --target es6 --theme minimal src",
     "predist": "yarn build",
     "dist": "rollup -c rollup.config.ts",
@@ -19,9 +20,14 @@
     "prepublish": "yarn dist"
   },
   "devDependencies": {
+    "node-dir": "0.1.17",
     "typescript": "2.7.2",
+    "ts-node": "5.0.0",
+    "tsconfig": "7.0.0",
+    "tsconfig-paths": "3.1.1",
     "typedoc": "0.10.0",
-    "rollup": "0.56.1",
+    "rollup": "0.56.2",
+    "chalk": "2.3.1",
     "rimraf": "2.6.2"
   },
   "license": "MIT"
