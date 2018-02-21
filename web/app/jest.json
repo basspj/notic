@@ -21,6 +21,5 @@
   "collectCoverage": true,
   "coverageReporters": ["json"],
   "coveragePathIgnorePatterns": ["/node_modules/", "/tests/", "/scripts/"],
-  "coverageDirectory": "coverage",
-  "mapCoverage": true
+  "coverageDirectory": "coverage"
 }

@@ -6,11 +6,11 @@
     "clean-coverage": "rimraf 'coverage'",
     "pretest": "yarn clean-coverage",
     "test": "jest -c jest.json --no-cache",
-    "dev": "ts-node -r tsconfig-paths/register --project scripts scripts/dev.ts",
-    "build": "ts-node -r tsconfig-paths/register --project scripts scripts/build.ts",
+    "dev": "ts-node -r tsconfig-paths/register --project scripts/tsconfig.json scripts/dev.ts",
+    "build": "ts-node -r tsconfig-paths/register --project scripts/tsconfig.json scripts/build.ts",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "e2e": "ts-node -r tsconfig-paths/register --project scripts scripts/e2e.ts"
+    "e2e": "ts-node -r tsconfig-paths/register --project scripts/tsconfig.json scripts/e2e.ts"
   },
   "dependencies": {
     "react": "16.2.0",
@@ -19,11 +19,11 @@
     "styled-components": "3.1.6"
   },
   "devDependencies": {
-    "@storybook/react": "3.3.13",
+    "@storybook/react": "3.3.14",
     "typescript": "2.7.2",
-    "ts-node": "4.1.0",
+    "ts-node": "5.0.0",
     "tsconfig-paths": "3.1.1",
-    "jest": "22.3.0",
+    "jest": "22.4.0",
     "ts-jest": "22.0.4",
     "puppeteer": "1.0.0",
     "webpack": "3.11.0",
