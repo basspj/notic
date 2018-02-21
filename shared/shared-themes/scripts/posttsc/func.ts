@@ -35,5 +35,5 @@ export const mapLine = (pathsRegex: RegExp[], matchPath: any, file: string) => (
   }
   return line;
 };
-export const newImportLines = (lines: string[], ...rest): string[] =>
+export const newImportLines = (lines: string[], ...rest: any[]): string[] =>
   lines.map(mapLine(rest[0], rest[1], rest[2]));
