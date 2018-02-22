@@ -29,5 +29,6 @@ before_install:
 
 install:
   - yarn
+  - yarn boot
 
 script: yarn test
