@@ -15,7 +15,7 @@
     "story-android": "yarn story -- --platform android",
     "story-all": "yarn story -- --platform all",
     "story-reset": "yarn story -- --reset-cache",
-    "start": "haul start --config webpack.haul.js --dev true --minify false",
+    "start": "haul start --dev true --minify false",
     "rn-start": "react-native start -- --reset-cache",
     "rn-link": "react-native link",
     "rn-update": "react-native upgrade",
