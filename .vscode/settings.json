@@ -15,13 +15,9 @@
   "eslint.options": {
     "extensions": [".js", ".jsx", ".ts", ".tsx"]
   },
-  "stylelint.enable": true,
   "editor.formatOnSave": true,
-  "prettier.typescriptEnable": ["typescript", "typescriptreact"],
-  "prettier.jsonEnable": ["json"],
-  "prettier.javascriptEnable": ["javascript", "javascriptreact"],
+  "prettier.stylelintIntegration": true,
   "prettier.eslintIntegration": true,
-  "autofold.default": 0,
   "files.associations": {
     ".*rc": "jsonc"
   }
