@@ -32,7 +32,6 @@ const config = ({ platform }, { module, resolve }) => ({
         test: /\.jsx?$/,
         enforce: 'pre',
         use: ['source-map-loader', 'babel-loader'],
-        exclude: /node_modules/
       },
       ...module.rules
     ]
