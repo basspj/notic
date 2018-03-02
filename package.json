@@ -29,8 +29,7 @@
     "pretest": "yarn clean-coverage",
     "test": "lerna run test",
     "posttest": "yarn coverage-merge",
-    "coverage-merge":
-      "istanbul-merge '{mobile,web,shared}/**/coverage/coverage-final.json' --out coverage/coverage-merged.json",
+    "coverage-merge": "istanbul-merge '{mobile,web,shared}/**/coverage/coverage-final.json' --out coverage/coverage-merged.json",
     "postcoverage-merge": "yarn coverage-report",
     "coverage-report": "codecov -f coverage/*.json",
     "snapshot": "yarn test --updateSnapshot",
@@ -42,7 +41,8 @@
     "prepublish": "yarn snyk-protect"
   },
   "dependencies": {
-    "snyk": "1.69.7"
+    "snyk": "1.69.7",
+    "react-native": "0.54.0"
   },
   "devDependencies": {
     "@types/react": "16.0.38",
