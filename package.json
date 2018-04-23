@@ -1,6 +1,5 @@
 {
   "name": "notic",
-  "description": "React, React Native and more",
   "private": true,
   "scripts": {
     "install-force": "yarn --skip-integrity-check",
@@ -39,7 +38,8 @@
     "cz": "git-cz",
     "cz-retry": "git-cz --retry",
     "snyk-protect": "snyk protect",
-    "prepublish": "yarn snyk-protect"
+    "prepublish": "yarn snyk-protect",
+    "react-dev": "yarn react-devtools"
   },
   "dependencies": {
     "snyk": "1.69.7"
@@ -134,7 +134,8 @@
     "lodash": "4.17.5",
     "shelljs": "0.8.1",
     "chalk": "2.3.1",
-    "rimraf": "2.6.2"
+    "rimraf": "2.6.2",
+    "react-devtools": "3.1.0"
   },
   "config": {
     "commitizen": {
