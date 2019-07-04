@@ -30,7 +30,6 @@ React, React Native and more
 
 ### Follow Style or Guideline
 
-* [x] [Airbnb's Javascript](https://github.com/airbnb/javascript)
 * [ ] [SemVer](http://semver.org/)
 
 ### IDE
@@ -51,7 +50,7 @@ React, React Native and more
 
 ### Style
 
-* [x] [Styled-Components](https://github.com/styled-components/styled-components)
+* [ ] [Styled-Components](https://github.com/styled-components/styled-components)
 
 ### App State
 
@@ -64,39 +63,36 @@ React, React Native and more
 
 ### Test
 
-* [x] [Jest](https://github.com/facebook/jest)
-* [x] [Enzyme](https://github.com/airbnb/enzyme)
+* [ ] [Jest](https://github.com/facebook/jest)
+* [ ] [Enzyme](https://github.com/airbnb/enzyme)
 
 ### Dev Tools
 
-* [x] [Storybook](https://github.com/storybooks/storybook)
+* [ ] [Storybook](https://github.com/storybooks/storybook)
 
 ### Linting
 
 * [x] [Eslint](https://github.com/eslint/eslint)
-* [x] [Tslint](https://github.com/palantir/tslint)
-* [x] [Stylelint](https://github.com/stylelint/stylelint)
 
 ### Code-Formatting
 
 * [x] [Prettier](https://github.com/prettier/prettier)
-* [x] [EditorConfig](http://editorconfig.org)
 
 ### Commit Tools
 
-* [x] [Commitizen](https://github.com/commitizen/cz-cli)
-* [x] [Commitlint](https://github.com/marionebl/commitlint)
-* [x] [Lint-Staged](https://github.com/okonet/lint-staged)
-* [x] [Husky](https://github.com/typicode/husky)
+* [ ] [Commitizen](https://github.com/commitizen/cz-cli)
+* [ ] [Commitlint](https://github.com/marionebl/commitlint)
+* [ ] [Lint-Staged](https://github.com/okonet/lint-staged)
+* [ ] [Husky](https://github.com/typicode/husky)
 
 ### CI
 
-* [x] [TravisCI](https://travis-ci.com)
-* [x] [Codecov](https://codecov.io/)
+* [ ] [TravisCI](https://travis-ci.com)
+* [ ] [Codecov](https://codecov.io/)
 
 ### Doc Tools
 
-* [x] [TypeDoc](https://github.com/TypeStrong/typedoc)
+* [ ] [TypeDoc](https://github.com/TypeStrong/typedoc)
 
 
 ## Mobile
@@ -113,17 +109,9 @@ React, React Native and more
 
 * [x] [React Native](https://github.com/facebook/react-native)
 
-### Style
-
-* [ ] [react-native-ui-lib](https://github.com/wix/react-native-ui-lib)
-
 ### Test
 
-* [x] [Detox](https://github.com/wix/detox)
-
-### Dev Tools
-
-* [x] [Haul](https://github.com/callstack/haul)
+* [ ] [Detox](https://github.com/wix/detox)
 
 
 ## Web
@@ -140,11 +128,11 @@ React, React Native and more
 
 ### Test
 
-* [x] [Puppeteer](https://github.com/GoogleChrome/puppeteer)
+* [ ] [Puppeteer](https://github.com/GoogleChrome/puppeteer)
 
 ### Dev Tools
 
-* [x] [Webpack](https://github.com/webpack/webpack)
+* [ ] [Webpack](https://github.com/webpack/webpack)
 
 ## Service
 
