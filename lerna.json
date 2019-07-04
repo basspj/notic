@@ -1,15 +1,8 @@
 {
-  "lerna": "2.5.1",
-  "version": "0.0.1",
-  "cacheDir": ".changelog",
-  "commands": {
-    "init": {
-      "exact": true
-    },
-    "publish": {
-      "ignore": ["*.md", "tests/**"]
-    }
-  },
-  "packages": ["mobile/*", "web/*", "shared/*"],
-  "npmClient": "yarn"
+  "version": "1.0.0",
+  "packages": [
+    "packages/*"
+  ],
+  "npmClient": "yarn",
+  "useWorkspaces": true
 }

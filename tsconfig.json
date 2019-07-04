@@ -1,33 +1,33 @@
 {
   "compilerOptions": {
-    "module": "es6",
-    "target": "es6",
-    "moduleResolution": "node",
-    "lib": ["es2015", "es2016", "es2017", "dom"],
-    "noEmit": true,
-    "sourceMap": true,
-    "experimentalDecorators": true,
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
-    "preserveConstEnums": true,
-    "removeComments": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
-    "noImplicitAny": true,
+    "isolatedModules": false,
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "newLine": "LF",
+    "noEmit": true,
+    "noEmitOnError": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
     "noImplicitReturns": true,
     "noResolve": false,
-    "noEmitOnError": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedParameters": false,
     "noUnusedLocals": true,
-    "strictNullChecks": true,
-    "strict": true,
-    "newLine": "LF",
+    "noUnusedParameters": false,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
-    "plugins": [
-      {
-        "name": "typescript-styled-plugin"
-      }
-    ]
-  },
-  "compileOnSave": false
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "es5"
+  }
 }
