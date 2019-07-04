@@ -1,9 +1,0 @@
-{
-  "extends": "../tsconfig.json",
-  "compilerOptions": {
-    "baseUrl": "../../dist/types",
-    "paths": {
-      "~/src/*": ["*"]
-    }
-  }
-}
