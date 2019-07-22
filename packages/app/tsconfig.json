@@ -1,15 +1,14 @@
 {
-    "extends": "../../tsconfig.json",
-    "compilerOptions": {
-      "jsx": "react-native",
-      "baseUrl": "./",
-      "paths": {
-        "~/*": ["*"]
-      },
-      "allowJs": true,
-      "noEmit": true
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-native",
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["*"]
     },
-    "include": ["src"],
-    "exclude": ["node_modules"]
-  }
-  
+    "allowJs": true,
+    "noEmit": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
